@@ -209,6 +209,5 @@ We relaunched the site and it is well received by the OIST community.
 
 <!--
 
-
 Next slide >>>>>
--- >
+-->

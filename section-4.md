@@ -381,16 +381,14 @@ Next slide >>>>>
 
 Sort in Japanese
 
+// JavaScript
 ```ts
-const items = [
-  'あまガミ', 'ウィーン', '荻野', 'ういーん', '中村', 'レアード', '角中', 'OKEON', '井上', '藤岡', '佐藤', 'SHIMA', '岩下',
-];
+arr.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
+console.log(arr);
 
-items.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
-console.log(items);
-// ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
-// "井上", "荻野", "角中", "岩下", "佐藤", "中村", "藤岡"]
-// "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
+Array => ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
+          "井上",   "荻野",   "角中",     "岩下",      "佐藤", "中村",      "藤岡"]
+       // "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
 ```
 
 // PHP
@@ -400,8 +398,8 @@ function sortWithLocale($arr) {
   return $arr;
 }
 
-// ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
-// "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
+Array => ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード",
+          "井上", "荻野", "角中", "岩下", "佐藤", "中村", "藤岡"]
 ```
 
 
@@ -420,23 +418,68 @@ Keiko kono
 
 ---
 
+# Sorting
+
+Sort in Traditional Chinese
+
+<div class="grid grid-cols-7 gap-4 mb-12">
+  <div>
+    <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
+  </div>
+  <div>
+    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">小籠包</span>
+  </div>
+  <div>
+    <img src="/images/魯肉飯.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">魯肉飯</span>
+  </div>
+  <div>
+    <img src="/images/高山茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">高山茶</span>
+  </div>
+  <div>
+    <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
+  </div>
+  <div>
+    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
+  </div>
+  <div>
+    <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">臭豆腐</span>
+  </div>
+</div>
+
+---
+
 <div class="hidden">
 # Sorting - Chinese characters
 </div>
 
 <h1>Chinese characters</h1>
 <h3>4 attributes</h3>
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 gap-4">
   <div class="col-span-2">
-    <img src="/images/moedict_yan.png" class="mt-6" />
+    <img src="/images/moedict_yan.png" class="mt-6 shadow-lg" />
   </div>
   <div class="">
     <div class="text-2xl">
       <ul>
-        <li>Radical Strokes</li>
-        <li>Total Strokes</li>
-        <li>Bopomofo (Phonetic characters)</li>
-        <li>Pinyin</li>
+        <li class="font-bold text-sky-600">Radical Strokes 
+          <div class="text-gray-500 font-normal text-lg">部首 + 画数順</div>
+        </li>
+        <li class="font-bold text-sky-600">Total Strokes　
+          <div class="text-gray-500 font-normal text-lg">総画数</div>
+        </li>
+        <li class="font-bold text-sky-600">Bopomofo 　
+          <div class="text-gray-500 font-normal text-lg">注音符号<br />(Phonetic characters)</div>
+        </li>
+        <li class="font-bold text-sky-600">Pinyin 
+          <div class="text-gray-500 font-normal text-lg">拼音</div>
+        </li>
       </ul>
     </div>
   </div>

@@ -135,23 +135,6 @@ And translate with context
   ];
 ```
 
-
-
-<!--
-```json
-//ja.po
-
-msgctxt "As an action"
-msgid "Contact"
-msgstr "コンタクト"
-
-msgctxt "As a section label"
-msgid "Contact"
-msgstr "連絡先"
-```
--->
-
-
 <!-- 
 For example "Contact"
 It will be translated into two different words in Japanese, as an action or as a section label.
@@ -195,13 +178,12 @@ class: 'text-center'
 </div>
 
 <!--
-Good afternoon, I hope you all have a good DrupalCon in Prague. In this session I'm going to talk about things around how to localize user experiences. 
-Especially experience in CJK languages.
+There are more details about localizing user experience from my talk in the latest DrupalCon prague. 
+If you're interesting and works on bilingual site often, it would be helpful for you.
 
-We have many tool to help with translations, but understand how to localize the user experience can make the website design better.
-If you don't know CJK yet, lets embrace some culture shock; If you are or may working on websites with CJK, I hope this will be helpful.
+But today, I want to address issues especially to the project and related to Japanese language.
 
-I already regret to submit the proposal for a short session when I making the slide. There are so much to talk, let's start the journey.
+Nest slide >>>>>
 -->
 
 ---
