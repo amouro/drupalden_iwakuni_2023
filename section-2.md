@@ -4,7 +4,8 @@ image: /images/white-box-kelli-mcclintock.jpg
 ---
 
 <div class="hidden">
-# ===== Migration, Dev, and Management =====
+
+# Migration, Dev, and Management
 </div>
 
 <div class="absolute bottom-10">
@@ -18,15 +19,11 @@ image: /images/white-box-kelli-mcclintock.jpg
 </div>
 
 <!--
-background image: Photo by Pisit Heng on Unsplash
-https://unsplash.com/photos/FQvadXmA524
--->
-
-<!--
-We all know Drupal has the well developed translation system that enable us to make the website well translated.
+Here comes the technical part of our project. I would like to share a high-level overview of migration and how we manage the development project.
 
 Next slide >>>>>
 -->
+
 ---
 
 # Migration
@@ -62,11 +59,19 @@ Next slide >>>>>
 </ol>
 
 <!-- 
+Migration is the first and the key factor to our project.
+All the important content and assets must be migrated.
+
+It is not only about the content node migration, 
+we also need to migrate files, images which were not managed in the CMS.
+
+Next slide >>>>>
+
 * Migration of content and media assets
 * Conversion of assets uploaded via IMCE
 * Usage of Drupal Migrate
-
 -->
+
 ---
 
 # Migration
@@ -104,14 +109,29 @@ Next slide >>>>>
 
 <div class="grid grid-cols-3 gap-8">
   <div class="col-span-2 pl-6 pt-8 items-center">
-    Migrated <span class="text-blue-600 dark:text-blue-500">3200</span> content nodes and <span class="text-blue-600 dark:text-blue-500">6600</span> media assets
+    <p>
+        Migrated <span class="text-blue-600 dark:text-blue-500">3200</span> content nodes and 
+        <span class="text-blue-600 dark:text-blue-500">6600</span> media assets
+    </p>
+    <p>
+        <pre class="p-4 bg-gray-700 text-white">[[nid:9999]] --> &lt;drupal-entity /&gt;</pre>
+    </p>
   </div>
   <div>
     <img src="/images/2023-01-06-23-30-22.png" />
   </div>
   
 </div>
+
 <!-- 
+Drupal 7 didn't have the Media Library, 
+we used to use video and photo content type to contain the assets.
+And later use shortcode to reference them in the content body.
+
+This means we must migrate all the 3,000 content nodes and over 6,000 media assets first.
+And then convert all the inline shortcode into the new media embed format.
+
+Next slide >>>>>
 -->
 
 ---
@@ -165,6 +185,12 @@ Next slide >>>>>
 
 
 <!-- 
+In Drupal 7, content editor were able to use IMCE to upload file and images to the server directly.
+
+During the project, we convert over 1,500 files into media types. Including image, document and embedded videos.
+This is not only to make sure we have all files in the managed system, it also make the system more secure.
+
+Next slide >>>>>
 -->
 
 ---
@@ -222,8 +248,20 @@ Next slide >>>>>
 
 
 <!--
-* We migrate 10,000 content and assets via the Drupal Migrate API
-* The migrate API is kept using in the project to provide mockup data for testing purpose
+At the end we migrate more than 10,000 content and assets via the Drupal Migrate API script.
+
+These code are not disposed when the migration is finished.
+The migrate profile is kept using in the project to provide mockup data for testing purpose.
+
+During each new feature development,
+our local environment and the cloud CI environment can rebuild the site with the mockup data on the fly.
+
+That allow us to run the unit test over and over, and make our deployment more robust and reliable.
+
+Migration is critical to the project. 
+To make the the project successful also needs lots of efforts.
+
+Next slide >>>>>
 -->
 
 ---
@@ -231,18 +269,6 @@ Next slide >>>>>
 # Key to the Successful Project
 
 <ol class="relative ml-4 mt-12 text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">                  
-    <li class="mb-10 ml-6">       
-        <span class="absolute flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-sky-900">
-            <svg aria-hidden="true" class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
-        </span>
-        <h2 class="font-medium leading-tight text-gray-700 dark:text-gray-100">Project management</h2>
-        <p class="text-sm">
-            <ul>
-                <li>Dev stage with vendor</li>
-                <li>In-house dev stage and editing stage</li>
-            </ul>
-        </p>
-    </li>
     <li class="mb-10 ml-6">
         <span class="absolute flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-sky-900">
             <svg aria-hidden="true" class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
@@ -252,6 +278,18 @@ Next slide >>>>>
             <ul>
                 <li>Progress report</li>
                 <li>Meet the stack holder</li>
+            </ul>
+        </p>
+    </li>
+    <li class="mb-10 ml-6">       
+        <span class="absolute flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-sky-900">
+            <svg aria-hidden="true" class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+        </span>
+        <h2 class="font-medium leading-tight text-gray-700 dark:text-gray-100">Project management</h2>
+        <p class="text-sm">
+            <ul>
+                <li>Dev stage with vendor</li>
+                <li>In-house dev stage and editing stage</li>
             </ul>
         </p>
     </li>
@@ -268,6 +306,22 @@ Next slide >>>>>
         </p>
     </li>
 </ol>
+
+<!--
+I'd like to address a few of them.
+
+First, keep communicating.
+We have to keep the team and the supervisor aware of our progress.
+OIST is a large organization with many decision chain.
+When necessary, we meet the stackholder directly, and find someone who can support and communicate at the right channel.
+
+Second, use tool well to manage the project tasks and assist the communications.
+There is no best tool, but only the right tool.
+
+Lastly, keep testing and make it automatic to reduce the repeating task and risks.
+
+Next slide >>>>>
+-->
 
 
 ---
@@ -337,6 +391,19 @@ Next slide >>>>>
     </div>
 </div>
 
+<!--
+The first stage when we worked with the vendor.
+The vendor use GitHub and its Project tool to manage the tasks.
+
+Both their developer and can communicate freely instead of only via their project manager.
+This accelerate the development, make the work transparent and increase the mutual trust.
+
+After the project delivered, we introduced Shortcut to manage the dev task and content creation task on the same platform.
+With shortcut, we can integrate GitHub to it to know the status of the PR and sync the dev task status.
+
+Next slide >>>>>
+-->
+
 ---
 layout: intro-image
 image: /images/github_project_planner.png
@@ -360,6 +427,14 @@ image: /images/github_project_planner.png
   </div>
 </div>
 
+<!--
+We all very familiar with GitHub or similar tools. 
+
+It's project tool is now more mature and easy to use.
+
+Next slide >>>>>
+-->
+
 ---
 layout: intro-image
 image: /images/shortcut_storyboard_docs.png
@@ -382,6 +457,18 @@ image: /images/shortcut_storyboard_docs.png
     </p>
   </div>
 </div>
+
+<!--
+Shortcut is easy to manage dev and editing tasks. 
+Given the nature of the tasks need different workflows, we can create different workflow for them.
+
+However, we can still bring them into the same Epic or Iteration easily.
+
+This is very helpful for a multi-function team.
+
+Next slide >>>>>
+-->
+
 ---
 layout: intro-image
 image: /images/shortcut_issue_github.png
@@ -404,6 +491,14 @@ image: /images/shortcut_issue_github.png
     </p>
   </div>
 </div>
+
+<!--
+In Shortcut, we can quickly sync the status of the task issue with the PR.
+
+Although they are two platform, we can work between them seemlessly.
+
+Next slide >>>>>
+-->
 
 ---
 
@@ -449,4 +544,19 @@ image: /images/shortcut_issue_github.png
 * Unit test
 * Automated deployment
 * Review with multiple dev environment
+-->
+
+<!--
+We're a two developer dev team, and we need to focus on dev task and resolving issues.
+Therefore keep the code standard and have the machine to help us test the site is crucial.
+
+With the workflow, we can quickly throw the commit to a online dev environment and switch to another task.
+The CI/CD is the guard to the code quality, once it is passed. We can focus on reviewing the logic of the code for each other.
+
+There is also deployment workflow for us to deploy the site to the production.
+
+With all the tools, program and continuous communication, we complete the project smoothly.
+Of course, all the deligent team member is the core that make the project successful.
+
+Next slide >>>>>
 -->
