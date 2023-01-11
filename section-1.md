@@ -1,10 +1,30 @@
 ---
 layout: intro-image
+image: /images/oist-www-D7.png
+---
+
+<div class="hidden">
+
+# The old site
+</div>
+
+<!--
+This was the old Drupal 7 site, it served us a glorious time, bring us over 30 million visits. Delivered 37 thousands of contents.
+
+The last three years, we doubled the monthly visis. When every lab building finished, when we received the high impact rank in Nature, when our profession won the Nobel prize.
+The website continuously sharing our best news to the world and celebrate with us.
+
+Next Slide >>>>>
+-->
+
+---
+layout: intro-image
 image: /images/find-goal-charlesdeluvio.jpg
 ---
 
 <div class="hidden">
-# ===== Goals & Plan =====
+
+# Goals & Plan
 </div>
 
 <div class="absolute bottom-10">
@@ -24,14 +44,12 @@ https://unsplash.com/photos/FQvadXmA524
 -->
 
 <!--
-We all know Drupal has the well developed translation system that enable us to make the website well translated.
+However, we continue to build dreams, define the future of the research in Japan. 
+Therefore we have set up new goals and need a new website to continue deliver the outcomes in a more effective and flexible way.
 
 Next slide >>>>>
 -->
----
-layout: intro-image
-image: /images/oist-www-D7.png
----
+
 
 ---
 
@@ -44,12 +62,12 @@ image: /images/oist-www-D7.png
             <svg aria-hidden="true" class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
         </span>
         <h2 class="font-medium leading-tight text-gray-700 dark:text-gray-100">Align the strategic plan of OIST</h2>
-        <p class="text-sm">
+        <p class="text-md">
             <ul>
-                <li>Research</li>
-                <li>Innovation</li>
-                <li>Education</li>
-                <li>Outreach</li>
+                <li>Research <span class="text-sky-600">研究</span></li>
+                <li>Education <span class="text-sky-600">教育</span></li>
+                <li>Innovation <span class="text-sky-600">イノベーション</span></li>
+                <li>Outreach <span class="text-sky-600">普及活動</span></li>
             </ul>
         </p>
     </li>
@@ -58,7 +76,7 @@ image: /images/oist-www-D7.png
             <svg aria-hidden="true" class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
         </span>
         <h2 class="font-medium leading-tight text-gray-700 dark:text-gray-100">A better content management experience</h2>
-        <p class="text-sm">
+        <p class="text-md">
             <ul>
                 <li>Media Library</li>
                 <li>Field Translation</li>
@@ -68,7 +86,18 @@ image: /images/oist-www-D7.png
     </li>
 </ol>
 
+<!--
+In 2020, OIST has set a strategic plan and started to emphsize the activities in Research, Education and Innovation. 
+It is also our responsibility to raise the awareness of STEM education, contribute to Okinawa and conduct outreach activities in the Japanese society.
 
+Through the entire project, we kept the three main pillars in mind, and make sure we are align with the organization strategy.
+
+Regarding the technical spec, we want to bring the better content management experience to the editors.
+Drupal 9 enable us to use Media Library to manage the assets, change the node translation method into field translation.
+Beside Drupal, we want to implement a design system to keep the UX consistent, and allow editors easily reuse web components when creating the content.
+
+Next slide >>>>>
+-->
 ---
 
 # Timeline
@@ -97,7 +126,7 @@ image: /images/oist-www-D7.png
         <div class="mt-3 sm:pr-8">
             <div class="text-lg font-semibold text-gray-900 dark:text-white">Procurement & Dev</div>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Starting from Aug 2021</time>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Hire vendor to migrate and develop the site in Drupal 9.</p>
         </div>
     </li>
     <li class="relative mb-6 sm:mb-0 w-max-1/3">
@@ -110,12 +139,24 @@ image: /images/oist-www-D7.png
         <div class="mt-3 sm:pr-8">
             <div class="text-lg font-semibold text-gray-900 dark:text-white">Editing</div>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">From Jun 2022</time>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Content conversion, recreation and editing training.</p>
         </div>
     </li>
 </ol>
 
 <!-- 
+The website project can be divided into 3 major phases.
+
+We conducted a full user research in Dec 2020, to have a better insight from the stackholders, internal and external users.
+Through the study, we know how the user percive us and how we can improve the information architecture.
+
+The second phase, we started to hired another vendor to migrate content and build the new site in Drupal 9.
+
+After the vendor finished their tasks, our web team take over the content conversion, recreation, train the content owner to use the new site.
+Meanwhile our developer and I continue update and resolve additional issues.
+
+Next slide >>>>>
+
 * User study Dec 2020 ~ Apr 2021
 * Procurement 2021~2022
 * Development Jan 2022 ~ Jun 2022
@@ -126,6 +167,7 @@ image: /images/oist-www-D7.png
 ---
 
 <div class="hidden">
+
 # New site
 </div>
 
@@ -141,6 +183,11 @@ image: /images/oist-www-D7.png
     
   </div>
 </div>
+
+<!--
+Last December, after we kick-off the project for two years.
+We relaunched the site and it is well received by the OIST community.
+-->
 
 ---
 
@@ -159,3 +206,9 @@ image: /images/oist-www-D7.png
   * Document and Links
   * Featured Content - Grid / Panel / Slide
   * Grid example (https://www.oist.jp/style-guide#grid-example)
+
+<!--
+
+
+Next slide >>>>>
+-- >
