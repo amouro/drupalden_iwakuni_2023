@@ -215,7 +215,7 @@ Next slide >>>>>
   </div>
   <div class="col-span-2">
 
-![](/public/images/cicd_workflow.png)
+![](/images/cicd_workflow.png)
   </div>
   
 </div>
@@ -442,7 +442,7 @@ image: /images/shortcut_issue_github.png
 
 <div class="mt-8">
 
-![](/public/images/circleci_flow.png)
+![](/images/circleci_flow.png)
 </div>
 <!--
 * Lint

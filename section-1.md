@@ -29,6 +29,11 @@ We all know Drupal has the well developed translation system that enable us to m
 Next slide >>>>>
 -->
 ---
+layout: intro-image
+image: /images/oist-www-D7.png
+---
+
+---
 
 # Goals
 
@@ -117,6 +122,25 @@ Next slide >>>>>
 * Editing Jun 2022 ~ Dec 2023
 
 -->
+
+---
+
+<div class="hidden">
+# New site
+</div>
+
+<div class="grid grid-cols-2 gap-4">
+  <div class="">
+    <img src="/images/oist-www-home.png" />
+  </div>
+  <div>
+    <img src="/images/oist-www-menu.png" class="mb-6" />
+    <img src="/images/oist-www-news.png" />
+  </div>
+  <div>
+    
+  </div>
+</div>
 
 ---
 
