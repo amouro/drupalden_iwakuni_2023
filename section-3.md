@@ -113,14 +113,18 @@ Next slide >>>>>
 
 And translate with context
 
-<div class="grid grid-cols-2">
-  <div>
-    <div>noun. as a section label: 連絡先</div>
-      <img class="h-36 mt-4" src="/images/2022-09-21-20-08-11.png" />
+<div class="grid grid-cols-2 mt-8 mb-4">
+  <div class="flex flex-col items-center">
+    <div class="font-bold">
+      noun. as a section label: <span class="text-sky-500 font-normal">連絡先</span>
+    </div>
+    <img class="h-60 mt-4 shadow-xl p-4" src="/images/2022-09-21-20-08-11.png" />
   </div>
-  <div>
-    <div>verb. as an action: コンタクト</div>
-      <img class="h-36 mt-4" src="/images/2022-09-21-18-28-37.png" />
+  <div class="flex flex-col items-center">
+    <div class="font-bold">
+      verb. as an action: <span class="text-sky-500 font-normal">コンタクト</span>
+    </div>
+    <img class="h-60 mt-4 shadow-md" src="/images/2022-09-21-18-28-37.png" />
   </div>
 </div>
 
@@ -165,17 +169,21 @@ class: 'text-center'
 # More than Words
 </div>
 
-<div class="absolute bottom-10 text-gray-400">
-  <span class="font-700">
-    Chris Wu @amourow Sep. 2022
-  </span>
-</div>
 
-<div class="text-6xl font-700 text-gray-700 self-end mt-24 mb-8 font-serif">
+
+<div class="text-6xl font-700 text-gray-700 self-end mt-43 mb-8 font-serif">
   More than Words
 </div>
 <div class="text-4xl text-gray-700">
   Localizing the User Experience
+</div>
+<div class="text-md text-sky-700 flex justify-center">
+  <span class="flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full mr-4 ring-4 ring-white dark:ring-gray-900 dark:bg-sky-900">
+    <svg class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+  </span>
+  <h2 class="font-normal leading-tight text-gray-700 dark:text-gray-100">
+    Online slide: <a class=" text-sky-600 underline-dashed" target="_blank" href="https://prague.amou.ro">https://prague.amou.ro</a>
+  </h2>
 </div>
 
 
@@ -426,15 +434,17 @@ Next slide >>>>>
 
 Implement `CompositionEvent` to avoid trigger search too early.
 
-<div class="grid grid-row-2 grid-col-2 gap-2">
-<div>
+<div class="grid grid-cols-2 gap-2">
+  <div>
 
-```javascript {all|7-11|2-3|2-5}
-  inputElement.on('input, compositinoend', function (event) {
-    if (event.type == 'compositionend') { compositionActive = false; }
+```javascript {all|9-13|2-7}
+  inputEle.on('input, compositinoend', function (event) {
+    if (event.type == 'compositionend') {
+      compositionActive = false; 
+    }
     if (compositionActive) { return; }
 
-    //...do autocomplete AJAX call
+    // Do autocomplete AJAX call
     
   }).on('compositionstart', function () {
     compositionActive = true;
@@ -442,16 +452,15 @@ Implement `CompositionEvent` to avoid trigger search too early.
     compositionActive = true;
   })
 ```
+  </div>
+  <div>
+    <iframe class="col-span-2 bg-blue-600/30 p-4 w-full h-60" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/API/Element/compositionstart_event/_sample_.live_example.html" width="960" height="480"></iframe>
+  </div>
+  <div class="col-span-2">
+
+* [MDN Web API](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent)
+* [Core #2823589: Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
 </div>
-<div>
-
-<!-- [MDN Web API](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent) -->
-
-[Core #2823589: Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
-</div>
-<iframe class="col-span-2 bg-blue-600/30 p-4 w-full" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/API/Element/compositionstart_event/_sample_.live_example.html" width="960" height="480"></iframe>
-
-
 </div>
 
 
