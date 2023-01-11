@@ -464,15 +464,55 @@ Bopomofo is the predominant phonetic system in teaching, reading and writing in 
 
 Sort in Traditional Chinese
 
+<div class="grid grid-cols-7 gap-4 mb-12">
+  <div>
+    <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
+  </div>
+  <div>
+    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">小籠包</span>
+  </div>
+  <div>
+    <img src="/images/魯肉飯.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">魯肉飯</span>
+  </div>
+  <div>
+    <img src="/images/高山茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">高山茶</span>
+  </div>
+  <div>
+    <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
+  </div>
+  <div>
+    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
+  </div>
+  <div>
+    <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">臭豆腐</span>
+  </div>
+</div>
+
+<div v-click class="">
+
 ```ts
 items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-stroke', {ignorePunctuation: true }));
-// ['台中', '台北', '宜蘭', '花蓮', '屏東', '苗栗', '桃園', '高雄', '基隆', '雲林', '新竹', '嘉義', '彰化']
+
+Array => ['小籠包', '牛肉麵', '珍珠奶茶', '臭豆腐', '高山茶', '鳳梨酥', '魯肉飯']
 ```
+</div>
+<div v-click class="mt-8">
 
 ```ts
 items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-zhuyin', {ignorePunctuation: true }));
-// ['屏東', '苗栗', '台北', '台中', '桃園', '高雄', '花蓮', '基隆', '嘉義', '新竹', '彰化', '宜蘭', '雲林']
+
+Array => ['鳳梨酥', '牛肉麵', '魯肉飯', '高山茶', '小籠包', '珍珠奶茶', '臭豆腐']
 ```
+</div>
+
+
 
 <!--
 In Traditional Chinese, localeCompare() also works with various attributes that I mentioned before.
