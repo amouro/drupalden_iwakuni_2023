@@ -41,7 +41,7 @@ fonts:
 <div class="text-6xl font-700 text-white self-end mt-32">
   Rebirth in Drupal 9
 </div>
-<div class="text-xl text-white mt-6">
+<div class="text-2xl text-white mt-6">
   Relaunch OIST 10 yrs-old website
 </div>
 <div class="text-lg text-white">
@@ -57,13 +57,26 @@ fonts:
 </div>
 
 <!--
-Good afternoon, I hope you all have a good DrupalCon in Prague. In this session I'm going to talk about things around how to localize user experiences. 
-Especially experience in CJK languages.
+[日本語]
 
-We have many tool to help with translations, but understand how to localize the user experience can make the website design better.
-If you don't know CJK yet, lets embrace some culture shock; If you are or may working on websites with CJK, I hope this will be helpful.
+Good afternoon, my name is Chris, and I am honored to be here to give a special talk today in the DrupalDEN Iwakuni.
+It would be easier for me to present the technical content in English today, but I'm still looking forward to talk to you and have your feedback in Japanese later.
 
-I already regret to submit the proposal for a short session when I making the slide. There are so much to talk, let's start the journey.
+[英語]
+
+Good afternoon, my name is Chris, and I am honored to be here to give a special talk today in the DrupalDEN Iwakuni.
+
+Drupal 7 lives the longest time among all the Drupal versions, it largely changes Drupal. 
+CCK became the Content Type entity fields, Views joined the core, ImageCache became the Image Style and futhermore we have responsive image style to offer more responsible ability to web design.
+
+Our university (OIST) build the Drupal 7 site since 2011, the first year of Drupal 7.
+Last year, we went through a two years jouney, reborn the website in Drupal 9.
+
+I'm going to talk about what and how we have developed the site, and how we manage the project in the first half.
+
+Because our website is fully bilingual in English and Japanese. 
+There are issues more than translation when we try to localize the Japanese user experience.
+I will share it in the second half of this talk.
 -->
 
 ---
@@ -78,12 +91,13 @@ I already regret to submit the proposal for a short session when I making the sl
   <div>
 
   1. <span class="text-3xl">🇹🇼 🇯🇵</span>
-  1. Senior Web Developer, OIST
-  1. Designer, Developer, former DUGTW leader
-
+  1. Senior Web Developer, OIST 
+  1. <span class="text-sm text-gray-400">Okinawa Institute of Science and Technology</span>
+  1. <span class="text-sm text-gray-400">沖縄科学技術大学院大学</span>
   </div>
   <div class="mt-4">
 
+  1. Designer, Developer, former DUGTW leader
   1. Keywords: <span class="text-3xl mt-4">☕️ 🇩🇪 🐈‍⬛</span>
   1. <a href="https://twitter.com/amourow" target="_blank" alt="GitHub"
       class="text-xl icon-btn mt-8 !border-none !hover:text-white bg-sky-600 text-white hover:bg-sky-600/80">
@@ -94,15 +108,15 @@ I already regret to submit the proposal for a short session when I making the sl
 
   </div>
 </div>
-<!--
-I'm a Taiwanese Drupal developer works in a international research institution in Japan. 
-During my 14 years Drupal adventure (according to Drupal dot org), I designed and made websites in Traditional Chinese and Japanese and English.
 
-I'm now working in a Japanese research institute which use English and Japanese as equaly important first language.
-Our team always make sure the experience of both languages are well perceived. 
+<!--
+I'm a Drupal developer, have 14 years in Drupal development.
+Given my background, I have many web design and dev experiences in Traditional Chinese, Japanese and English.
+
+I am also a Drupal Community member and a former leader in Taiwan.
+Besides Drupal, I welcome conversations regarding coffee, Germany and cats with me.
 
 Next slides >>>
-
 -->
 
 ---
@@ -241,8 +255,7 @@ class: text-center
   <span class="flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full mr-4 ring-4 ring-white dark:ring-gray-900 dark:bg-sky-900">
     <svg class="w-5 h-5 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
   </span>
-<h2 class="font-normal leading-tight text-gray-700 dark:text-gray-100">
-  Online slide: <a class=" text-sky-600 underline-dashed" href="https://iwakuni.amou.ro">https://iwakuni.amou.ro</a>
-</h2>
-
+  <h2 class="font-normal leading-tight text-gray-700 dark:text-gray-100">
+    Online slide: <a class=" text-sky-600 underline-dashed" href="https://iwakuni.amou.ro">https://iwakuni.amou.ro</a>
+  </h2>
 </div>
