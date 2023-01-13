@@ -177,26 +177,6 @@ src: ./section-4.md
 
 ---
 layout: intro-image
-image: /images/DC-Iwakuni-Blue-footer.png
----
-
-<div class="text-gray-700 pt-12">
-
-# Recap
-
-* Rebirth of OIST official website
-* How we manage the project and develop the new site
-* Language matters in OIST
-* How to bring the better UX to users regarding the language
-
-<div class="pt-12">
-
-Online slide: https://iwakuni.amou.ro
-</div>
-</div>
-
----
-layout: intro-image
 image: /images/farnsworth_house_xmas.jpg
 ---
 
