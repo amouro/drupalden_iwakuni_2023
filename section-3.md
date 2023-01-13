@@ -6,7 +6,18 @@ image: /images/unit_yamamoto.jpg
 # Diversity
 
 <!--
-Explain why translation is important in OIST
+OIST is a unique graduate university in Japan. We have more than 50% international employees and students.
+
+This is our Cell Signal Unit, with the leading faculty, fellow researcher and students.
+From one photo we can see how diverse we are.
+
+Therefore English and Japanese are equaly important in OIST.
+Most of content on our website are translated into both languages. Including the offical website and internal sites.
+
+During the project, we have dealt many translation issues.
+In the second part of this talk, I'd like to focus on a few of them for our Japanese and APAC region attendees.
+
+Next slide >>>>>
 -->
 
 ---
@@ -15,6 +26,7 @@ image: /images/dictionary-pisit-heng.jpg
 ---
 
 <div class="hidden">
+
 # ===== Important Translation Issues =====
 </div>
 
@@ -26,7 +38,7 @@ image: /images/dictionary-pisit-heng.jpg
 
 <div class="absolute top-10">
   <h1>Translation in Drupal</h1>
-  <p>translation and design</p>
+  <p>Localizeing User Experiences</p>
 </div>
 
 <!--
@@ -35,7 +47,10 @@ https://unsplash.com/photos/FQvadXmA524
 -->
 
 <!--
-Explain why translation is important in OIST
+Drupal has a well defined translation system in core.
+Depends on your experience and role, there is always a way for you to make translations.
+
+Next slide >>>>>
 -->
 
 ---
@@ -52,9 +67,11 @@ User Interface translation in Drupal
 ![](/images/2022-08-22-22-58-40.png)
 
 <!--
+As a sitebuilder.
+
 We can translated the node with field translation enabled.
 
-We can translate many strings appear in the UI.
+And we can translate many strings appear in the UI.
 
 <b>Next slide >>>>></b>
 -->
@@ -82,7 +99,8 @@ Translation in Twig
 ```
 
 <!--
-To make string translatable, we can mark text in TWIG or PHP to be translatable with t() filter and function.
+As a themer.
+We use TWIG to mark translatable sentences with variable in it.
 
 <b>Next slide >>>>></b>
 -->
@@ -101,9 +119,14 @@ Translate a sentence with t() function and variables that allow us to place the 
 ```
 
 <!--
-It is also possible to use dynamic variable in a sentence, so we can cover different grammars in SVO or SOV order.
+As a developer.
 
-There is chance that we need a translation context, because a word could be verb or noun or has more than one meaning.
+We can mark the translatable string with the t() function.
+
+It is also capable to use dynamic variable in a sentence.
+
+However, there is chance that we need a translation context, 
+because a word could be verb or noun or has more than one meaning.
 
 <b>Next slide >>>>></b>
 -->
@@ -136,7 +159,7 @@ And translate with context
 ```
 
 <!-- 
-For example "Contact"
+For example: "Contact"
 It will be translated into two different words in Japanese, as an action or as a section label.
 
 <b>Next slide >>>>></b>
@@ -201,9 +224,8 @@ YYYY<span class="text-blue-400">年</span>mm<span class="text-blue-400">月</spa
 🇯🇵 Japan 🇹🇼 Taiwan
 
 <!--
-Is this all for date, of course not.
-
-There are different calendar in the world.
+In Japan as well as Taiwan, we are used to use this format for the date. 
+Starting from Year to month and day.
 
 <b>Next slide >>>>></b>
 -->
@@ -218,12 +240,17 @@ layout: fact
 <span class="text-blue-400">Sep. 12</span> vs. <span class="text-teal-400">Dec. 9</span>
 
 <!--
-If you see September, please raise your hand.
+In other country we often see this date format.
 
-OK I'm sure I'm in Europe, because it is the way to format it with the order from day to month and than year.
-But is is rare in states of America.
+Is it Sep. 12 or Dec. 9?
 
-In our institute, we have diverse members including telented researcher, staff from the world, we have to find a common way to make sure our understanding of information are on the same page.
+The answer could be both.
+
+Because most of european country they read Dec. 9th, 
+while in the States of America reads Sep. 12
+
+In our institute, we have diverse members from the world, 
+we have to find a common way to make sure our understanding of information are on the same page.
 
 <b>Next slide >>>>></b>
 -->
@@ -237,8 +264,8 @@ layout: fact
 
 ISO 8601 Formats
 
-<!-- 
-Therefore, unless we write the Month in text, otherwise we use ISO 8601 format because it is also the same order of format for Japanese UI.
+<!--
+Therefore, we use ISO 8601 format in English UI, as it is same order of format for Japanese UI.
 
 <b>Next slide >>>>></b>
 -->
@@ -246,14 +273,10 @@ Therefore, unless we write the Month in text, otherwise we use ISO 8601 format b
 ---
 layout: intro-image
 image: /images/cjk-cover-left.png
-#layout: 3-images
-#imageLeft: images/cjk-cover-left.png
-
-imageTopRight: images/cjk-cover-right-top.png
-imageBottomRight: images/cjk-cover-right-bottom.png
 ---
 
 <div class="hidden">
+
 # ===== Issue in CJK: Typing =====
 </div>
 
