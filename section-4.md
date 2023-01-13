@@ -27,9 +27,9 @@ https://unsplash.com/photos/AGtksbL8z2c
 <!--
 After the typing issue, let's see the sorting issue.
 
-In english we sometimes sort with the alphabet for title of articles, taxonomy tags, or site names for example.
+In english we often sort with the alphabet for title of articles, taxonomy tags, or names for example.
 
-It is entirely different when sorting in Japanese.
+It is entirely different when sorting in Japanese or Chinese.
 
 <b>Next slide >>>>></b>
 -->
@@ -330,7 +330,13 @@ Japanese Kanji has more than 600 out of 2,000 common characters which has more t
 layout: fact
 ---
 
+<div class="hidden">
+
 # 1263 -> 580
+</div>
+
+<h1><span class="line-through text-gray-300 dark:text-gray-800">1263</span> 580</h1>
+
 Same Chinese character different pronounciation
 
 580 from 5266 common used Chinese characters (traditional).

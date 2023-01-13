@@ -410,6 +410,7 @@ image: /images/github_project_planner.png
 ---
 
 <div class="hidden">
+
 # GitHub
 </div>
 
@@ -441,6 +442,7 @@ image: /images/shortcut_storyboard_docs.png
 ---
 
 <div class="hidden">
+
 # Shortcut
 </div>
 
@@ -475,6 +477,7 @@ image: /images/shortcut_issue_github.png
 ---
 
 <div class="hidden">
+
 # Shortcut
 </div>
 

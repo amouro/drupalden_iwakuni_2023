@@ -201,7 +201,8 @@ image: /images/farnsworth_house_xmas.jpg
 ---
 
 <div class="hidden">
-# Recap
+
+# Devil is in the details
 </div>
 
 <div class="absolute top-10">
@@ -212,15 +213,15 @@ image: /images/farnsworth_house_xmas.jpg
 
 <div class="absolute top-30 text-shadow-lg w-full">
   <div v-click-hide class="absolute top-0 w-full">
-    <h1><span class="text-yellow-300">神</span>は細部に宿る</h1>
-    <p>
-      Der liebe <span class="text-yellow-300">Gott</span> steckt im detail. / German ドイツ 
-    </p>
-  </div>
-  <div v-after class="absolute top-0 w-full">
     <h1><span class="text-sky-300">悪魔</span>は細部に宿る</h1>
     <p>
       <span class="text-sky-300">Devil</span> is in the details
+    </p>
+  </div>
+  <div v-after class="absolute top-0 w-full">
+    <h1><span class="text-yellow-300">神</span>は細部に宿る</h1>
+    <p>
+      Der liebe <span class="text-yellow-300">Gott</span> steckt im detail. / German ドイツ 
     </p>
   </div>
 </div>
@@ -241,6 +242,7 @@ image: /images/DC-Iwakuni-Blue-accent-footer.png
 class: text-center
 ---
 <div class="hidden">
+
 # Thank you
 </div>
 

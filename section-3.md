@@ -17,7 +17,7 @@ Most of content on our website are translated into both languages. Including the
 During the project, we have dealt many translation issues.
 In the second part of this talk, I'd like to focus on a few of them for our Japanese and APAC region attendees.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -50,7 +50,7 @@ https://unsplash.com/photos/FQvadXmA524
 Drupal has a well defined translation system in core.
 Depends on your experience and role, there is always a way for you to make translations.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -261,8 +261,7 @@ layout: fact
 
 # YYYY-mm-dd
 
-
-ISO 8601 Formats
+<span class="text-sky-500">ISO 8601 Formats</span>
 
 <!--
 Therefore, we use ISO 8601 format in English UI, as it is same order of format for Japanese UI.
@@ -296,8 +295,9 @@ background image: Photo by Edho Pratama on Unsplash
 https://unsplash.com/photos/T6fDN60bMWY
 -->
 
-<!-- 
-Let's focus on CJK world closer.
+<!--
+Next issue, let's think about typing in Japanese, Chinese or Korean
+This three languages are aka CJK
 
 It is easy to type latin alphabets on keyboard, how does words being typed in CJK?
 
@@ -348,9 +348,12 @@ It is easy to type latin alphabets on keyboard, how does words being typed in CJ
 
 <!--
 These are pagragraphs in CJK about 
-What to do if you receive a positive COVID-19 notification from a public health center
+
+"What to do if you receive a positive COVID-19 notification from the public health center"
 
 You can see the paragraph rarely has spaces in the sentence.
+To index the content and make it easy to search, usually requires extra treats.
+
 (We use kuromoji when we index the data in Elastice search to get the text indexed and split into words correctly.)
 
 <b>Next slide >>>>></b>
@@ -382,10 +385,12 @@ You can see the paragraph rarely has spaces in the sentence.
 </div>
 
 <!--
-How do we type, what's our keyboards look like?
+How do we type, what's CJK keyboards look like?
 
-From left to right, we see two Traditional Chinese keyboard with 倉頡 and then 注音
-And there are two Korean keyboard layout and two Japanese layout on in mobile with a 3by3 grid or a comapct keyboard layout which has the 50 essential sound characters.
+From left to right, we see two Traditional Chinese keyboards.
+And there are two Korean keyboard layout and two Japanese layout on in mobile with a "3 by 3" grid or a comapct keyboard layout which has the 50 essential sound characters.
+
+For those who you don't know the languages, they looks like puzzles.
 
 <b>Next slide >>>>></b>
 -->
@@ -394,20 +399,20 @@ And there are two Korean keyboard layout and two Japanese layout on in mobile wi
 
 # Input method
 
-| Keyword      | Segments      | Segments |
-| ------------ | ------------- | -------- |
-| Computer | | 8 |
-| コンピューター (konpyūtā)| kon pyu- ta- | 10 |
-| 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 |
-| 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 |
+| Keyword      | Segments      | Segments | Lang |
+| ------------ | ------------- | -------- | ---- |
+| Computer | | 8 | en |
+| コンピューター (konpyūtā)| kon pyu- ta- | 10 | jp-ja |
+| 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 | zh-hant |
+| 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 | zh-hans |
 
 <!--
-When type the word for computer, the key strokes are also different.
+When typing the words, the key strokes are vary.
 
-It is also different term in Traditional Chinese use in Taiwan or Simplified Chinese in China.
+For the word "Computer" we could also tell it is different in Traditional Chinese use in Taiwan or Simplified Chinese in China.
 
-When entering CJK text, we would like to wait until the word
-is entered. This can be done using a set of special Javascript events.
+When typing CJK text, a word is completed only when all the segments is typed.
+Unlike typing English, there might be possible word combination before finishing the typing.
 
 <b>Next slide >>>>></b>
 
@@ -422,13 +427,38 @@ What do you see?
   <source src="/images/SyI343.mp4" type="video/mp4" />
 </video>
 
-<!--  
-This is a short clip shows how we can type the autocompleted search keywords in Japanese
+<!-- 
+This is a short clip shows "how we type the search keyword in the autocompleted search box in Japanese"
+What do you find in this clip?
 
-- Input Chinese or Japanese Kanji consists of one to four phonetic elements
-- Same pronouciation could have more than one words
+- Input Chinese or Japanese Kanji requires one to four or even more phonetic elements
+- There are different words in Kanji which has the same pronouciation
 
-The main issue here is the autocompletd triggers the search too early before the word has been chosen or the typing is finished.
+So, there is a problem here that is annoying to CJK users.
+The search box triggers the search too early before the actual keyword is completed.
+
+This can be improved by implementing special JavaScript event method.
+
+<b>Next slide >>>>></b>
+-->
+
+---
+
+# Autocomplete search suggestion
+
+What is <span class="bg-green-300 p-1">improved</span>?
+
+<video controls>
+  <source src="/images/vjS5Xr.mp4" type="video/mp4" />
+</video>
+<!-- Configuration 
+composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
+-->
+
+<!--
+In this clip, we can find
+
+the english typing works normally, and the Japanese word for Corona, only query when the word is complete.
 
 <b>Next slide >>>>></b>
 -->
@@ -471,97 +501,18 @@ Implement `CompositionEvent` to avoid trigger search too early.
 
 <!-- 
   // Demo with NEKO ネコ
+
   // TODO find the trace of autocomplete js in Drupal 8 or even 7
-  how did Drupal handle the composition events before.
-  Japaense user gets angry when the form is submitting while confirming the kanji words.
 
-  [Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
-  
+  In Drupal, there are autocomplete field for tags or referencing entities.
+  The core had the issue before until it has been fixed in 2016. Thanks to the Drupal contributors.
 
--->
-<!--
-(function ($) {
-  'use strict';
-  const autocompleteDropdownSelector = '.oist-search-form ul';
-  Drupal.behaviors.searchAutocomplete = {
-    attach: function (context, settings) {
-      $('.oist-search-form input').once('autocomplete').on('input', function () {
-        const keyword = $(this).val();
-        $(autocompleteDropdownSelector).remove();
-        if (keyword.length < 2) {
-          return;
-        }
-        $.ajax({
-          url: settings.searchBaseUrl + encodeURIComponent(keyword) + '?sort=relevancy&order=desc&number=5&language=' + settings.language + '&startdate=&enddate=&preview=5',
-          crossDomain: true,
-          success: function (data) {
-            // $(autocompleteDropdownSelector).remove();
-            var results = '<div class="search-result-list bg-white px-4">';
-            results += '<ul class="border-t border-gray-400 w-full pt-2">';
-            for (var i in data) {
-              if (data[i].site === 'www' || data[i].site === 'main') {
-                results += '<li class="pb-3"><a class="text-gray-700 underline js-search-autocomplete ' + data[i].site + '" href="' + data[i].link + '">' + data[i].title + '</a></li>';
-              }
-              else {
-                results += '<li class="pb-3"><a class="flex items-center gap-x-2 text-gray-700 js-search-autocomplete ' + data[i].site + '" href="' + data[i].link + '"><i class="fa fa-external-link" aria-hidden="true"></i><span class="underline">' + data[i].title + '</span></a></li>';
-              }
-            }
-            results += '</ul></div>';
-            if ($('.oist-mobile-search').hasClass('active')) {
-              $('.oist-mobile-search .oist-search-results-attach').after(results);
-            }
-            else {
-              $('.oist-desktop-search').after(results);
-            }
-          },
-        });
-      }).focusout(function () {
-        // Generally when we lose focus from the search box,
-        // we would like to hide the suggestions.
-        // However, if the user clicks on a result, if we remove the markup
-        // the click would fail. That's why we make this exception for the link
-        // clicks.
-        var selected = $('.js-search-autocomplete:hover');
-        if (selected.length) {
-          return;
-        }
-        // $(autocompleteDropdownSelector).remove();
-      });
-    }
-  };
-})(jQuery);
--->
+  Mainly it is the CompositionEvent helps us identify the special moment when the typing is finished.
+  When we made this custom autocomplete search box, we have to implement the event, too
 
-<!--
-
-There is CompositionEvent that we can use to detect the correct moment of the finish of the input.
-(RIGHT >>>)
-
-We treat the compositionupdate and start as typing in progress (RIGHT >>>)
-
-And when the word is decided, there will be a compositionEnd event and we can started to (RIGHT >>>) trigger the query with AJAX
-
-Phew...
-
-<b>Next slide >>>>></b>
--->
-
----
-
-# Autocomplete search suggestion
-
-What is <span class="bg-green-300 p-1">improved</span>?
-
-<video controls>
-  <source src="/images/vjS5Xr.mp4" type="video/mp4" />
-</video>
-<!-- Configuration 
-composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
--->
-
-<!--
-
-The english typing works normally, and the Japanese word for Corona, only query once the word is decided.
+  1. First we detect the starting point of the CJK input method.
+  2. And wait until the word is decided, as we see the compositionEnd event happens.
+  3. And then we send our the AJAX request.
 
 <b>Next slide >>>>></b>
 -->
