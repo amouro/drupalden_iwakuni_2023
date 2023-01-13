@@ -25,13 +25,11 @@ https://unsplash.com/photos/AGtksbL8z2c
 -->
 
 <!--
-Now we know how to type in CJK.
-The last part of this presentation, let's dig further in the language.
-I promise this is not language class.
+After the typing issue, let's see the sorting issue.
 
 In english we sometimes sort with the alphabet for title of articles, taxonomy tags, or site names for example.
 
-How does CJK do in the similar way?
+It is entirely different when sorting in Japanese.
 
 Next slide >>>>>
 -->
@@ -62,10 +60,8 @@ Next slide >>>>>
 </div>
 
 <!--
-In Japanese the order of the Gojuon is the main ordering system. 
-It is based on the phenentical elements.
-
-And there are Hiragana for main Japanese language, and Katagana often used for translate the foreign language or new invented terms.
+Since this event is held in Japan.
+Most of you know it is sort with the order of the Gojuon.
 
 Next slide >>>>>
 -->
@@ -88,7 +84,9 @@ Next slide >>>>>
 </div>
 
 <!--
-And also Chinese Character which is called Kanji in Japanese.
+And also there are Kanji or Chinese Character, too.
+
+Kanji actually need extra care in sorting.
 
 Next slide >>>>>
 -->
@@ -135,8 +133,7 @@ $array = [
 
 
 <!--
-Any title, term, sentence can start with the above three characters.
-Latin and Numbers, Hiragana, Katagana and Kanji.
+When we have an array composed by the Latin, Numbers, Hiragana, Katagana and Kanji.
 How do we sort them correctly?
 
 Next slide >>>>>
@@ -203,20 +200,13 @@ Array
 </div>
 
 <!--
-The ideal order looks like this.
+The ideal order in Japanese language should looks like this.
 Starting with Symbols, Numbers, Alphabets like in English.
 
 And than Hiragana, Katagana, the last part will be the Kanji.
-Hiragana and Katagana is actually follow the order of the matrix starting from rows and than columns.
+Hiragana and Katagana follows the order of Gojuon.
 
-How about the Kanji?
-
-1. 記号
-2. 数字
-3. アルファベット（全角含む）
-4. ひらがな
-5. カタカナ
-6. 漢字
+But, how about the Kanji?
 
 Next slide >>>>>
 -->
@@ -254,130 +244,24 @@ Next slide >>>>>
 
 
 <!-- 
-Use sort() function directly, it is sorting by the index number the character is in the Unicode table. How ever it doesn't help to find the character in the Japanese speaker's mind.
+If we using sort() function directly, 
+it is sorting by the index number of the character in the Unicode table. 
+However it doesn't make sense to the Japanese speaker.
 
-With localeCompare() in JS.
-The Kanji sorting started with the pronouciation of the first character and then the next character if first character is the same.
-If I write down the number of its row and number of the character, you can see the it is in the incremental order.
-But, why is there a 1-2 in the middle?
+The solution in JS is the localeCompare() function.
+The Kanji will be sorted with the pronouciation of the first character 
+and then the next character if first character is the same.
 
-It is because the Kanji could have more than one pronounciation.
-Let's hold this thought and jumps to Chinese for now.
+However there is one word mis-placed in the middle. 岩下
+
+It is because the Kanji has another pronounciation.
+
+In Japanese or in Mandarin Chinese the character could have more than one pronounciation.
 
 Next slide >>>>>
 
 日本漢字的音讀最為明顯，日本漢字的讀法一般有二個以上，是因不同時期、不同地方傳入的結果。 在普通話中亦間有取自遊牧民族等其他民族語言、梵語、其他漢語語言或方言的發音屬於此類。
 
--->
-
----
-layout: fact
----
-
-# 600+
-
-Same Japanese character different pronounciation
-
-609 from 2136 common used Japanese kanji characters.
-
-<div class="text-xs mt-20 text-gray-500">
-
-1. 文科省常用漢字表 20101130： [PDF](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf)
-1. 常用漢字表 - 音訓表: [Website](http://jgrammar.life.coocan.jp/ja/data/onkun.htm)
-1. Explaination about Kanji (EN): [Website](https://www.tofugu.com/japanese/onyomi-kunyomi/)
-</div>
-
-<!--
-Japanese Kanji also has more than 600 out of 2,000 common characters which has more than one pronounciations.
--->
----
-layout: fact
----
-
-# 580
-Same Chinese character different pronounciation
-
-580 from 5266 common used Chinese characters (traditional).
-
-<div class="text-xs mt-20 text-gray-500">
-
-There were 1263 characters have more than one pronounciation.<br />
-In 2012, 683 was reviewed and combined into single pronounciation.
-
-1. 教育部國語一字多音審訂表 2012 [PDF](https://language.moe.gov.tw/files/people_files/%E5%88%9D%E7%A8%BF.pdf)
-</div>
-
-<!--
-So how many characters has more than one pronounciation?
-In the official definition from the Ministry of Education of Taiwan, there are 580 out of 5,000 common used traditional Chinese characters.
-It was over 1200 before the officials reviewed and merged a lot of them in 2012.
-
-Next slide >>>>>
--->
-
----
-layout: image-right
-image: /images/raku-japanese-character.png
----
-
-<div class="hidden">
-# Sorting - Japanese pronunciation
-</div>
-
-# Japanese Kanji
-Multiple pronunciation
-
-![](/images/raku-japanese-pronounce.png)
-
-1. ❶ Music
-2. <span class="text-gray-500">❶ To play (music)</span>
-3. ❷ Happy
-4. ❸ To appreciate
-
-<!--
-Japanese has the same character with their own variation.
-It has more pronounciation due to different cultural context.
-
-Four of them or inherited from ancient Chinese in various eras, and another four represent things in the original Japanese language 
-
-Next slides >>>>>
--->
-
----
-
-<div class="hidden">
-# Sorting - Chinese pronunciation
-</div>
-
-# Chinese
-Multiple pronunciation
-
-<div class="grid grid-cols-2">
-    <div class="grid-1">
-        <div class="flex flex-row items-center">
-            <img src="/images/2022-09-02-15-36-40.png" alt="" class="h-full w-auto" />
-            <span class="pl-4">Music</span>
-        </div>
-        <div class="flex flex-row items-center">
-            <img src="/images/2022-09-02-15-37-09.png" alt="" class="h-full w-auto" />
-            <span class="pl-4">Happy, Happiness, love to</span>
-        </div>
-        <div class="flex flex-row items-center">
-            <img src="/images/2022-09-02-15-37-43.png" alt="" class="h-full w-auto" />
-            <span class="pl-4">To appreciate</span>
-        </div>
-    </div>
-    <div class="grid-2 flex justify-center">
-        <img src="/images/le-chinese-character.png" class="h-90" />
-    </div>
-</div>
-
-<!--
-Like in Japanese, it is also common that a traditional Chinese can have mutiple pronounciation.
-
-This is the character means stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for verb "To appreciate".
-
-Next slide >>>>>
 -->
 
 ---
@@ -419,6 +303,119 @@ Next slide >>>>>
 Keiko kono
 河野　かわの　こうの
 
+-->
+
+---
+layout: fact
+---
+
+# 600+
+
+Same Japanese character different pronounciation
+
+609 from 2136 common used Japanese kanji characters.
+
+<div class="text-xs mt-20 text-gray-500">
+
+1. 文科省常用漢字表 20101130： [PDF](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf)
+1. 常用漢字表 - 音訓表: [Website](http://jgrammar.life.coocan.jp/ja/data/onkun.htm)
+1. Explaination about Kanji (EN): [Website](https://www.tofugu.com/japanese/onyomi-kunyomi/)
+</div>
+
+<!--
+So how many characters has more than one pronounciation?
+Japanese Kanji has more than 600 out of 2,000 common characters which has more than one pronounciations.
+-->
+---
+layout: fact
+---
+
+# 1263 -> 580
+Same Chinese character different pronounciation
+
+580 from 5266 common used Chinese characters (traditional).
+
+<div class="text-xs mt-20 text-gray-500">
+
+There were 1263 characters have more than one pronounciation.<br />
+In 2012, 683 was reviewed and combined into single pronounciation.
+
+1. 教育部國語一字多音審訂表 2012 [PDF](https://language.moe.gov.tw/files/people_files/%E5%88%9D%E7%A8%BF.pdf)
+</div>
+
+<!--
+In the official definition from the Ministry of Education of Taiwan, 
+there were 1,263 out of 5,000 common used traditional Chinese characters.
+Around ten years ago, the officials reviewed and merged a lot of them.
+And it was reduced to 580.
+
+Next slide >>>>>
+-->
+
+---
+layout: image-right
+image: /images/raku-japanese-character.png
+---
+
+<div class="hidden">
+# Sorting - Japanese pronunciation
+</div>
+
+# Japanese Kanji
+Multiple pronunciation
+
+![](/images/raku-japanese-pronounce.png)
+
+1. ❶ Music
+2. <span class="text-gray-500">❶ To play (music)</span>
+3. ❷ Happy
+4. ❸ To appreciate
+
+<!--
+Let's take the Kanji for example.
+
+It has more pronounciation due to different cultural context.
+
+Four of them or inherited from ancient Chinese in various eras, and another four represent things in the original Japanese language 
+
+Next slides >>>>>
+-->
+
+---
+
+<div class="hidden">
+# Sorting - Chinese pronunciation
+</div>
+
+# Chinese
+Multiple pronunciation
+
+<div class="grid grid-cols-2">
+    <div class="grid-1">
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-36-40.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">Music</span>
+        </div>
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-37-09.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">Happy, Happiness, love to</span>
+        </div>
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-37-43.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">To appreciate</span>
+        </div>
+    </div>
+    <div class="grid-2 flex justify-center">
+        <img src="/images/le-chinese-character.png" class="h-90" />
+    </div>
+</div>
+
+<!--
+The original Chinese character is this one, and it has three pronounciations.
+
+The character stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for verb "To appreciate".
+
+Next slide >>>>>
 -->
 
 ---
