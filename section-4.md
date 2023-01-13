@@ -30,7 +30,7 @@ In english we sometimes sort with the alphabet for title of articles, taxonomy t
 
 It is entirely different when sorting in Japanese.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -61,7 +61,7 @@ Next slide >>>>>
 Since this event is held in Japan.
 Most of you know it is sort with the order of the Gojuon.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -86,7 +86,7 @@ And also there are Kanji or Chinese Character, too.
 
 Kanji actually need extra care in sorting.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -133,7 +133,7 @@ $array = [
 When we have an array composed by the Latin, Numbers, Hiragana, Katagana and Kanji.
 How do we sort them correctly?
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -204,7 +204,7 @@ Hiragana and Katagana follows the order of Gojuon.
 
 But, how about the Kanji?
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -254,7 +254,7 @@ It is because the Kanji has another pronounciation.
 
 In Japanese or in Mandarin Chinese the character could have more than one pronounciation.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 日本漢字的音讀最為明顯，日本漢字的讀法一般有二個以上，是因不同時期、不同地方傳入的結果。 在普通話中亦間有取自遊牧民族等其他民族語言、梵語、其他漢語語言或方言的發音屬於此類。
 
@@ -292,7 +292,7 @@ Array => ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レ
 For Japanese, it is also order by the phonetic order, including the Kanji.
 PHP does have similar feature, but I would recommand sorting in database query to get a better sorting result.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 岩下 Iwashita 被判斷成 Gan shita
 フリガナ
@@ -344,7 +344,7 @@ there were 1,263 out of 5,000 common used traditional Chinese characters.
 Around ten years ago, the officials reviewed and merged a lot of them.
 And it was reduced to 580.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -410,7 +410,7 @@ The original Chinese character is this one, and it has three pronounciations.
 
 The character stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for verb "To appreciate".
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -491,7 +491,7 @@ We can count its total strokes, radical stokes, spell it with phonetical element
 Usually we order with one of the attributes and sometimes let the user change the sorting method, for instance the book search system in a library.
 When there is symbol or roman alphabets, they also come first like in Japanese.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 
 Bopomofo is the predominant phonetic system in teaching, reading and writing in elementary school in Taiwan. 
@@ -621,5 +621,5 @@ Native speakers know the common variations of the pronouciation, when we process
 Sometimes if the client request to make it in the explicit order, the better way it to map the words into a pre-defined table or array.
 In the end it will be a fully customized array.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->

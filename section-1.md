@@ -14,7 +14,7 @@ This was the old Drupal 7 site, it served us a glorious time, bring us over 30 m
 The last three years, we doubled the monthly visis. When every lab building finished, when we received the high impact rank in Nature, when our profession won the Nobel prize.
 The website continuously sharing our best news to the world and celebrate with us.
 
-Next Slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -47,7 +47,7 @@ https://unsplash.com/photos/FQvadXmA524
 However, we continue to build dreams, define the future of the research in Japan. 
 Therefore we have set up new goals and need a new website to continue deliver the outcomes in a more effective and flexible way.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 
@@ -96,7 +96,7 @@ Regarding the technical spec, we want to bring the better content management exp
 Drupal 9 enable us to use Media Library to manage the assets, change the node translation method into field translation.
 Beside Drupal, we want to implement a design system to keep the UX consistent, and allow editors easily reuse web components when creating the content.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -155,7 +155,7 @@ The second phase, we started to hired another vendor to migrate content and buil
 After the vendor finished their tasks, our web team take over the content conversion, recreation, train the content owner to use the new site.
 Meanwhile our developer and I continue update and resolve additional issues.
 
-Next slide >>>>>
+<b><b>Next slide >>>>></b></b>
 
 * User study Dec 2020 ~ Apr 2021
 * Procurement 2021~2022
@@ -209,5 +209,5 @@ We relaunched the site and it is well received by the OIST community.
 
 <!--
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->

@@ -21,7 +21,7 @@ image: /images/white-box-kelli-mcclintock.jpg
 <!--
 Here comes the technical part of our project. I would like to share a high-level overview of migration and how we manage the development project.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -65,7 +65,7 @@ All the important content and assets must be migrated.
 It is not only about the content node migration, 
 we also need to migrate files, images which were not managed in the CMS.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 * Migration of content and media assets
 * Conversion of assets uploaded via IMCE
@@ -131,7 +131,7 @@ And later use shortcode to reference them in the content body.
 This means we must migrate all the 3,000 content nodes and over 6,000 media assets first.
 And then convert all the inline shortcode into the new media embed format.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -190,7 +190,7 @@ In Drupal 7, content editor were able to use IMCE to upload file and images to t
 During the project, we convert over 1,500 files into media types. Including image, document and embedded videos.
 This is not only to make sure we have all files in the managed system, it also make the system more secure.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -261,7 +261,7 @@ That allow us to run the unit test over and over, and make our deployment more r
 Migration is critical to the project. 
 To make the the project successful also needs lots of efforts.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -320,7 +320,7 @@ There is no best tool, but only the right tool.
 
 Lastly, keep testing and make it automatic to reduce the repeating task and risks.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 
@@ -401,7 +401,7 @@ This accelerate the development, make the work transparent and increase the mutu
 After the project delivered, we introduced Shortcut to manage the dev task and content creation task on the same platform.
 With shortcut, we can integrate GitHub to it to know the status of the PR and sync the dev task status.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -432,7 +432,7 @@ We all very familiar with GitHub or similar tools.
 
 It's project tool is now more mature and easy to use.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -466,7 +466,7 @@ However, we can still bring them into the same Epic or Iteration easily.
 
 This is very helpful for a multi-function team.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -497,7 +497,7 @@ In Shortcut, we can quickly sync the status of the task issue with the PR.
 
 Although they are two platform, we can work between them seemlessly.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -558,5 +558,5 @@ There is also deployment workflow for us to deploy the site to the production.
 With all the tools, program and continuous communication, we complete the project smoothly.
 Of course, all the deligent team member is the core that make the project successful.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->

@@ -56,7 +56,7 @@ We can translated the node with field translation enabled.
 
 We can translate many strings appear in the UI.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -84,7 +84,7 @@ Translation in Twig
 <!--
 To make string translatable, we can mark text in TWIG or PHP to be translatable with t() filter and function.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -105,7 +105,7 @@ It is also possible to use dynamic variable in a sentence, so we can cover diffe
 
 There is chance that we need a translation context, because a word could be verb or noun or has more than one meaning.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -139,7 +139,7 @@ And translate with context
 For example "Contact"
 It will be translated into two different words in Japanese, as an action or as a section label.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -205,7 +205,7 @@ Is this all for date, of course not.
 
 There are different calendar in the world.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 
@@ -225,7 +225,7 @@ But is is rare in states of America.
 
 In our institute, we have diverse members including telented researcher, staff from the world, we have to find a common way to make sure our understanding of information are on the same page.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -240,7 +240,7 @@ ISO 8601 Formats
 <!-- 
 Therefore, unless we write the Month in text, otherwise we use ISO 8601 format because it is also the same order of format for Japanese UI.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -278,7 +278,7 @@ Let's focus on CJK world closer.
 
 It is easy to type latin alphabets on keyboard, how does words being typed in CJK?
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 -->
 
@@ -330,7 +330,7 @@ What to do if you receive a positive COVID-19 notification from a public health 
 You can see the paragraph rarely has spaces in the sentence.
 (We use kuromoji when we index the data in Elastice search to get the text indexed and split into words correctly.)
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 ---
 
@@ -364,7 +364,7 @@ How do we type, what's our keyboards look like?
 From left to right, we see two Traditional Chinese keyboard with 倉頡 and then 注音
 And there are two Korean keyboard layout and two Japanese layout on in mobile with a 3by3 grid or a comapct keyboard layout which has the 50 essential sound characters.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -386,7 +386,7 @@ It is also different term in Traditional Chinese use in Taiwan or Simplified Chi
 When entering CJK text, we would like to wait until the word
 is entered. This can be done using a set of special Javascript events.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 
 -->
 ---
@@ -407,7 +407,7 @@ This is a short clip shows how we can type the autocompleted search keywords in 
 
 The main issue here is the autocompletd triggers the search too early before the word has been chosen or the typing is finished.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -520,7 +520,7 @@ And when the word is decided, there will be a compositionEnd event and we can st
 
 Phew...
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -540,5 +540,5 @@ composition events https://github.com/oist/oist-www/issues94#issuecomment-100966
 
 The english typing works normally, and the Japanese word for Corona, only query once the word is decided.
 
-Next slide >>>>>
+<b>Next slide >>>>></b>
 -->
