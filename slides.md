@@ -226,15 +226,33 @@ image: /images/farnsworth_house_xmas.jpg
   </div>
 </div>
 
-<!-- * Der liebe Gott steckt im detail. - Mies van der Rohe
-* 神は細部に宿る
-* Devial is in the details
+<!-- 
+At the end, I want share a sentence with you.
 
-<div class="pt-12">
-Pete Sieger
-Online slide: https://iwakuni.amou.ro
-</div>
-</div> -->
+We hear people say "Devil is in the details".
+It means the difficulties or troubles is not revealed until you look close to the details.
+
+The origin of the sentence is somehow opposite.
+<b>CLICK!</b>
+
+> 神は細部に宿る
+
+It is from a Germany architecture, Mies van der Rohe, 
+
+> "Der liebe Gott steckt im detail."
+
+No matter it is Devil or God, the sentence has one thing in common.
+The most important things are in the detail.
+
+- When we see a new website is complete, people cheering and feels satisfied.
+- When the visitor find good experience using the website in their native tounge intuitively.
+
+It is all because the developer, designer worked on every details to bring the best UX to our user.
+
+Lets to look closer, and take the challenge, deal with the devil, we will find the glorious miracle in the end.
+
+<b>Next slide >>>>></b>
+-->
 
 ---
 layout: intro-image
@@ -261,3 +279,10 @@ class: text-center
     Online slide: <a class=" text-sky-600 underline-dashed" href="https://iwakuni.amou.ro">https://iwakuni.amou.ro</a>
   </h2>
 </div>
+
+<!--
+Thank you, I'm Chris, 
+I wish you a good afternoon today in the following sessions.
+
+ご清聴ありがとうございました
+-->
