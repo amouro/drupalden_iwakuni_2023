@@ -21,39 +21,6 @@ In the second part of this talk, I'd like to focus on a few of them for our Japa
 -->
 
 ---
-layout: intro-image
-image: /images/dictionary-pisit-heng.jpg
----
-
-<div class="hidden">
-
-# ===== Important Translation Issues =====
-</div>
-
-<div class="absolute bottom-10">
-  <span class="font-700">
-
-  </span>
-</div>
-
-<div class="absolute top-10">
-  <h1>Translation in Drupal</h1>
-  <p>Localizeing User Experiences</p>
-</div>
-
-<!--
-background image: Photo by Pisit Heng on Unsplash
-https://unsplash.com/photos/FQvadXmA524
--->
-
-<!--
-Drupal has a well defined translation system in core.
-Depends on your experience and role, there is always a way for you to make translations.
-
-<b>Next slide >>>>></b>
--->
-
----
 
 # Translate with i18n
 
@@ -67,8 +34,10 @@ User Interface translation in Drupal
 ![](/images/2022-08-22-22-58-40.png)
 
 <!--
-As a sitebuilder.
+Drupal has a well defined translation system in core.
+Depends on your experience and role, there is always a way for you to make translations.
 
+As a sitebuilder.
 We can translated the node with field translation enabled.
 
 And we can translate many strings appear in the UI.
