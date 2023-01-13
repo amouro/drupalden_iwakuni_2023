@@ -4,6 +4,7 @@ image: /images/sorting-soraya-irving.jpg
 ---
 
 <div class="hidden">
+
 # ===== Issue in CJK: Sorting =====
 </div>
 
@@ -38,6 +39,7 @@ Next slide >>>>>
 ---
 
 <div class="hidden">
+
 # Sorting - 五十音 (Gojūon)
 </div>
 
@@ -94,6 +96,7 @@ Next slide >>>>>
 ---
 
 <div class="hidden">
+
 # Sorting - 五十音 (Gojūon) Sorting
 </div>
 
@@ -141,6 +144,7 @@ Next slide >>>>>
 ---
 
 <div class="hidden">
+
 # Sorting - 五十音 (Gojūon) Sorting
 </div>
 
@@ -271,6 +275,7 @@ layout: fact
 ---
 
 # 600+
+
 Same Japanese character different pronounciation
 
 609 from 2136 common used Japanese kanji characters.
