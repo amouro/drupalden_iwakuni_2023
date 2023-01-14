@@ -19,46 +19,10 @@ image: /images/white-box-kelli-mcclintock.jpg
 </div>
 
 <!--
-Here comes the technical part of our project. I would like to share a high-level overview of migration and how we manage the development project.
+Here comes the technical part of our project. 
 
-<b>Next slide >>>>></b>
--->
+I would like to share a high-level overview of migration and how we manage the development project.
 
----
-
-# Migration
-
-<ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 mt-28 mb-12">
-    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 w-1/3">
-        <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-            1
-        </span>
-        <span>
-            <h4 class="font-bold text-2xl leading-tight">Content node</h4>
-            <div class="text-sm">Content and Media node</div>
-        </span>
-    </li>
-    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 w-1/3">
-        <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-            2
-        </span>
-        <span>
-            <h4 class="font-bold text-2xl leading-tight">Embed assets</h4>
-            <div class="text-sm">Assets uploaded via IMCE</div>
-        </span>
-    </li>
-    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 w-1/3">
-        <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-            3
-        </span>
-        <span>
-            <h4 class="font-bold text-2xl leading-tight">Migration Profile</h4>
-            <div class="text-sm">Mock up data for CI/CD</div>
-        </span>
-    </li>
-</ol>
-
-<!-- 
 Migration is the first and the key factor to our project.
 All the important content and assets must be migrated.
 
@@ -66,10 +30,6 @@ It is not only about the content node migration,
 we also need to migrate files, images which were not managed in the CMS.
 
 <b>Next slide >>>>></b>
-
-* Migration of content and media assets
-* Conversion of assets uploaded via IMCE
-* Usage of Drupal Migrate
 -->
 
 ---
@@ -185,10 +145,15 @@ And then convert all the inline shortcode into the new media embed format.
 
 
 <!-- 
-In Drupal 7, content editor were able to use IMCE to upload file and images to the server directly.
+In the past, content editor were able to use IMCE 
+to upload file and images to the server directly.
 
-During the project, we convert over 1,500 files into media types. Including image, document and embedded videos.
-This is not only to make sure we have all files in the managed system, it also make the system more secure.
+During the migration, we converted over 1,500 inline files sources into media types. 
+
+Including image, document and embedded videos.
+
+This doesn't only make sure we have all files in the managed system, 
+it also makes the system more secure.
 
 <b>Next slide >>>>></b>
 -->
@@ -248,18 +213,22 @@ This is not only to make sure we have all files in the managed system, it also m
 
 
 <!--
-At the end we migrate more than 10,000 content and assets via the Drupal Migrate API script.
+At the end we migrate more than 10,000 content and assets 
+via the Drupal Migrate API script.
 
-These code are not disposed when the migration is finished.
-The migrate profile is kept using in the project to provide mockup data for testing purpose.
+These code are not disposed after the migration is finished.
+The migrate profile is kept in use in the project 
+to provide mockup data for testing purpose.
 
 During each new feature development,
-our local environment and the cloud CI environment can rebuild the site with the mockup data on the fly.
+our local environment and the cloud CI environment builds the site with the mockup data every time.
 
-That allow us to run the unit test over and over, and make our deployment more robust and reliable.
+This allows us to run the unit test over and over, 
+and make our deployment more robust and reliable.
 
 Migration is critical to the project. 
-To make the the project successful also needs lots of efforts.
+It cost lots of efforts to review the content and validate the result.
+However it really worth it and promise the success of the project.
 
 <b>Next slide >>>>></b>
 -->
@@ -308,15 +277,16 @@ To make the the project successful also needs lots of efforts.
 </ol>
 
 <!--
-I'd like to address a few of them.
+Beyond migration, there were keys that made the project success.
 
-First, keep communicating.
+First, lots of communicattion.
 We have to keep the team and the supervisor aware of our progress.
 OIST is a large organization with many decision chain.
-When necessary, we meet the stackholder directly, and find someone who can support and communicate at the right channel.
+When necessary, we meet the stackholder directly, 
+and find someone who can support and communicate to the right channel.
 
 Second, use tool well to manage the project tasks and assist the communications.
-There is no best tool, but only the right tool.
+There is no best tool, but only the right tool that all team members are willing to participate.
 
 Lastly, keep testing and make it automatic to reduce the repeating task and risks.
 
@@ -398,8 +368,8 @@ The vendor use GitHub and its Project tool to manage the tasks.
 Both their developer and can communicate freely instead of only via their project manager.
 This accelerate the development, make the work transparent and increase the mutual trust.
 
-After the project delivered, we introduced Shortcut to manage the dev task and content creation task on the same platform.
-With shortcut, we can integrate GitHub to it to know the status of the PR and sync the dev task status.
+After the project delivered, we introduced Shortcut to manage the dev task and content creation task together on the same platform.
+With Shortcut, we can integrate GitHub to it to know the status of the PR and sync the dev task status.
 
 <b>Next slide >>>>></b>
 -->
@@ -431,7 +401,7 @@ image: /images/github_project_planner.png
 <!--
 We all very familiar with GitHub or similar tools. 
 
-It's project tool is now more mature and easy to use.
+Its project tool is now more mature and easy to use.
 
 <b>Next slide >>>>></b>
 -->
@@ -461,10 +431,11 @@ image: /images/shortcut_storyboard_docs.png
 </div>
 
 <!--
-Shortcut is easy to manage dev and editing tasks. 
-Given the nature of the tasks need different workflows, we can create different workflow for them.
+Shortcut is a task management system. It can manage dev and editing tasks easily. 
 
-However, we can still bring them into the same Epic or Iteration easily.
+Given the nature of the tasks of dev and editing need different workflows, 
+we can create different workflow on Shortcut for them.
+And then bring them into the same Epic or Iteration easily.
 
 This is very helpful for a multi-function team.
 
@@ -496,7 +467,7 @@ image: /images/shortcut_issue_github.png
 </div>
 
 <!--
-In Shortcut, we can quickly sync the status of the task issue with the PR.
+In Shortcut, we can quickly sync the status of the dev task with the GitHub.
 
 Although they are two platform, we can work between them seemlessly.
 
@@ -542,23 +513,21 @@ Although they are two platform, we can work between them seemlessly.
 
 ![](/images/circleci_flow.png)
 </div>
-<!--
-* Lint
-* Unit test
-* Automated deployment
-* Review with multiple dev environment
--->
 
 <!--
 We're a two developer dev team, and we need to focus on dev task and resolving issues.
-Therefore keep the code standard and have the machine to help us test the site is crucial.
 
-With the workflow, we can quickly throw the commit to a online dev environment and switch to another task.
-The CI/CD is the guard to the code quality, once it is passed. We can focus on reviewing the logic of the code for each other.
+The CI/CD becomes the 3rd developer, 
+who check the coding standard and deploy the code for us.
 
-There is also deployment workflow for us to deploy the site to the production.
+So our developers can quickly throw the commit to a online dev environment and then switch to another task.
 
-With all the tools, program and continuous communication, we complete the project smoothly.
+Once the commit passes the CI/CD workflow.
+We can focus on reviewing the logic of the code in PR.
+
+And then ask the CI/CD to continue deploy it to the production site.
+
+With all the tools, scripts and continuous communication, we complete the project smoothly.
 Of course, all the deligent team member is the core that make the project successful.
 
 <b>Next slide >>>>></b>

@@ -59,12 +59,12 @@ fonts:
 <!--
 [日本語]
 
-Good afternoon, my name is Chris, and I am honored to be here to give a special talk today in the DrupalDEN Iwakuni.
-It would be easier for me to present the technical content in English today, but I'm still looking forward to talk to you and have your feedback in Japanese later.
+こんにちは、私の名前はクリスです。今日はDrupalDEN岩国でスペシャルトークをすることになり、光栄に思っています。
+今日は英語で技術的な内容を発表した方がやりやすいのですが、それでも後で日本語でお話しして、ご意見をいただくのが楽しみです。
 
 [英語]
 
-Good afternoon, my name is Chris, and I am honored to be here to give a special talk today in the DrupalDEN Iwakuni.
+Good afternoon, my name is Chris. I am honored to be here to give a special talk today in the DrupalDEN Iwakuni.
 
 Drupal 7 lives the longest time among all the Drupal versions, it largely changes Drupal. 
 CCK became the Content Type entity fields, Views joined the core, ImageCache became the Image Style and futhermore we have responsive image style to offer more responsible ability to web design.
@@ -72,11 +72,11 @@ CCK became the Content Type entity fields, Views joined the core, ImageCache bec
 Our university (OIST) build the Drupal 7 site since 2011, the first year of Drupal 7.
 Last year, we went through a two years jouney, reborn the website in Drupal 9.
 
-I'm going to talk about what and how we have developed the site, and how we manage the project in the first half.
+I'm going to talk about what and how we have developed the site, and how we manage the project in the first part.
 
 Because our website is fully bilingual in English and Japanese. 
 There are issues more than translation when we try to localize the Japanese user experience.
-I will share it in the second half of this talk.
+I will share those in the second part of this talk.
 -->
 
 ---
@@ -110,13 +110,15 @@ I will share it in the second half of this talk.
 </div>
 
 <!--
-I'm a Drupal developer, have 14 years in Drupal development.
+First, a little bit about myself.
+
+I'm a Drupal developer, have 14 years experiences in Drupal development.
 Given my background, I have many web design and dev experiences in Traditional Chinese, Japanese and English.
 
-I am also a Drupal Community member and a former leader in Taiwan.
+I am also a Drupal Community member and a former group leader in Taiwan.
 Besides Drupal, I welcome conversations regarding coffee, Germany and cats with me.
 
-Next slides >>>
+<b>Next slides >>></b>
 -->
 
 ---
@@ -149,7 +151,7 @@ image: /images/DC-Iwakuni-Blue-full.png
 <!--
 Before jumping the the topic, please noted that there is no endorsement for vendors, if I mentioned any. 
 
-Next slide >>>
+<b>Next slides >>></b>
 -->
 
 ---
@@ -264,5 +266,5 @@ class: text-center
 Thank you, I'm Chris, 
 I wish you a good afternoon today in the following sessions.
 
-ご清聴ありがとうございました
+ご清聴ありがとうございました。
 -->

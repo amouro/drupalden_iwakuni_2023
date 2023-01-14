@@ -27,7 +27,7 @@ https://unsplash.com/photos/AGtksbL8z2c
 <!--
 After the typing issue, let's see the sorting issue.
 
-In english we often sort with the alphabet for title of articles, taxonomy tags, or names for example.
+In English we often sort with the alphabet for title of articles, taxonomy tags, or names for example.
 
 It is entirely different when sorting in Japanese or Chinese.
 
@@ -69,6 +69,7 @@ Most of you know it is sort with the order of the Gojuon.
 ---
 
 <div class="hidden">
+
 # Sorting - 漢字 (Kanji)
 </div>
 
@@ -85,8 +86,6 @@ Most of you know it is sort with the order of the Gojuon.
 
 <!--
 And also there are Kanji or Chinese Character, too.
-
-Kanji actually need extra care in sorting.
 
 <b>Next slide >>>>></b>
 -->
@@ -204,40 +203,30 @@ The ideal order in Japanese language should looks like this.
 Starting with Symbols, Numbers, Alphabets like in English.
 
 And than Hiragana, Katagana, the last part will be the Kanji.
-Hiragana and Katagana follows the order of Gojuon.
 
-But, how about the Kanji?
+Hiragana and Katagana follows the order of Gojuon.
+What is the order the Kanji?
 
 <b>Next slide >>>>></b>
 -->
 ---
 
-<div class="hidden">
-# Sorting - 五十音 (Gojūon) Sorting
-</div>
+# Sorting
 
-<div class="absolute top-10">
-  <h2>五十音 (Gojūon)</h2>
-  <h3>Japanese "fifty sounds"</h3>
-</div>
+Sort in Japanese
 
-<div class="grid grid-cols-[2fr,1fr] gap-8">
+<div class="grid grid-cols-[2fr,1fr] gap-8 mt-12">
   <div class="flex flex-col justify-center">
     
-```ts {1-3|5-7|5,6,8}
+```ts
 // UTF-8
 ["中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
 [U+4E2D, U+4E95, U+4F50, U+5CA9, U+837B, U+85E4, U+89D2]
-
-// localeCompare()
-["井上",  "荻野",    "角中",    "岩下",      "佐藤",    "中村",    "藤岡"]
-[い(1-2), おぎ(1-5), かく(2-1), いわ(1-2),   さ(3-1), なか(5-1), ふじ(6-3)]
-[い(1-2), おぎ(1-5), かく(2-1), がん(2-1.1), さ(3-1), なか(5-1), ふじ(6-3)]
 ```
 
   </div>
   <div class="flex-1 ">
-    <img src="/images/2022-09-04-17-28-34.png" class="" />
+    
   </div>
 </div>
 
@@ -246,22 +235,9 @@ But, how about the Kanji?
 <!-- 
 If we using sort() function directly, 
 it is sorting by the index number of the character in the Unicode table. 
-However it doesn't make sense to the Japanese speaker.
-
-The solution in JS is the localeCompare() function.
-The Kanji will be sorted with the pronouciation of the first character 
-and then the next character if first character is the same.
-
-However there is one word mis-placed in the middle. 岩下
-
-It is because the Kanji has another pronounciation.
-
-In Japanese or in Mandarin Chinese the character could have more than one pronounciation.
+However it doesn't make sense to the Japanese speaker, isn't it.
 
 <b>Next slide >>>>></b>
-
-日本漢字的音讀最為明顯，日本漢字的讀法一般有二個以上，是因不同時期、不同地方傳入的結果。 在普通話中亦間有取自遊牧民族等其他民族語言、梵語、其他漢語語言或方言的發音屬於此類。
-
 -->
 
 ---
@@ -294,7 +270,14 @@ Array => ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レ
 
 <!--
 For Japanese, it is also order by the phonetic order, including the Kanji.
-PHP does have similar feature, but I would recommand sorting in database query to get a better sorting result.
+
+There is a solution in JS called localeCompare().
+The Kanji will be sorted with the pronouciation of the first character 
+and then the next character if first character is the same.
+
+PHP does have similar feature, 
+however from the backend, 
+please prioritize using database query to get a better sorting result.
 
 <b>Next slide >>>>></b>
 
@@ -303,6 +286,50 @@ PHP does have similar feature, but I would recommand sorting in database query t
 Keiko kono
 河野　かわの　こうの
 
+-->
+
+
+---
+
+<div class="hidden">
+# Sorting - 五十音 (Gojūon) Sorting
+</div>
+
+<div class="absolute top-10">
+  <h2>五十音 (Gojūon)</h2>
+  <h3>Japanese "fifty sounds"</h3>
+</div>
+
+<div class="grid grid-cols-[2fr,1fr] gap-8">
+  <div class="flex flex-col justify-center">
+    
+```ts {all|2,3|2,4}
+// localeCompare()
+["井上",  "荻野",    "角中",    "岩下",      "佐藤",    "中村",    "藤岡"]
+[い(1-2), おぎ(1-5), かく(2-1), いわ(1-2),   さ(3-1), なか(5-1), ふじ(6-3)]
+[い(1-2), おぎ(1-5), かく(2-1), がん(2-1.1), さ(3-1), なか(5-1), ふじ(6-3)]
+```
+
+  </div>
+  <div class="flex-1 ">
+    <img src="/images/2022-09-04-17-28-34.png" class="" />
+  </div>
+</div>
+
+
+
+<!--
+However this is not perfect,
+there is one word mis-placed in the middle. 岩下
+
+It is because the Kanji has another pronounciation.
+And the first character is read in an alternative way ”がん” rather than "いわ".
+
+In Japanese or in Mandarin Chinese the character could have more than one pronounciation.
+
+<b>Next slide >>>>></b>
+
+日本漢字的音讀最為明顯，日本漢字的讀法一般有二個以上，是因不同時期、不同地方傳入的結果。 在普通話中亦間有取自遊牧民族等其他民族語言、梵語、其他漢語語言或方言的發音屬於此類。
 -->
 
 ---
@@ -364,10 +391,12 @@ image: /images/raku-japanese-character.png
 ---
 
 <div class="hidden">
+
 # Sorting - Japanese pronunciation
 </div>
 
-# Japanese Kanji
+# Kanji
+
 Multiple pronunciation
 
 ![](/images/raku-japanese-pronounce.png)
@@ -390,10 +419,12 @@ Next slides >>>>>
 ---
 
 <div class="hidden">
+
 # Sorting - Chinese pronunciation
 </div>
 
 # Chinese
+
 Multiple pronunciation
 
 <div class="grid grid-cols-2">
@@ -432,16 +463,24 @@ Sort in Traditional Chinese
 
 <div class="grid grid-cols-7 gap-4 mb-12">
   <div>
+    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
+  </div>
+  <div>
+    <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">臭豆腐</span>
+  </div>
+  <div>
     <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
   </div>
   <div>
-    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">小籠包</span>
-  </div>
-  <div>
     <img src="/images/魯肉飯.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">魯肉飯</span>
+  </div>
+  <div>
+    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">小籠包</span>
   </div>
   <div>
     <img src="/images/高山茶.png" class="object-cover h-28 w-full" />
@@ -451,19 +490,24 @@ Sort in Traditional Chinese
     <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
   </div>
-  <div>
-    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
-  </div>
-  <div>
-    <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">臭豆腐</span>
-  </div>
 </div>
+
+<!--
+So we now know Japanese sort by pronouciation. How about Mandarin?
+
+Let's bring some delicious Taiwanese food here.
+They are in the order of my preference. :)
+
+How do we sort them using their attributes?
+Let's first see what options do we have.
+
+<b>Next slide >>>>></b>
+-->
 
 ---
 
 <div class="hidden">
+
 # Sorting - Chinese characters
 </div>
 
@@ -494,19 +538,20 @@ Sort in Traditional Chinese
 </div>
 
 <!--
-I call Czech Republica "捷克" in Chinese which consists of two characters, the first character 捷, has all the attributes that could be used for sorting.
-That's correct, more than one way.
+This is the first character of 岩国, ㄧㄢˊ in Mandarin.
 
-We can count its total strokes, radical stokes, spell it with phonetical elements that only uses in Taiwan, or Pinyin with roman characters which is the main input method in China.
+There are at least four different ways to sort it.
 
-Usually we order with one of the attributes and sometimes let the user change the sorting method, for instance the book search system in a library.
-When there is symbol or roman alphabets, they also come first like in Japanese.
+We can count its radical strokes, total strokes, 
+spell it with phonetical elements 注音 which is only used in Taiwan, 
+or Pinyin with roman characters which is the main input method in China.
+
+Usually we order with one of the attributes and sometimes let the user change the sorting method, 
+for instance the book search system in a library.
 
 <b>Next slide >>>>></b>
 
-
 Bopomofo is the predominant phonetic system in teaching, reading and writing in elementary school in Taiwan. 
-
 -->
 
 ---
@@ -517,12 +562,12 @@ Sort in Traditional Chinese
 
 <div class="grid grid-cols-7 gap-4 mb-12">
   <div>
-    <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
+    <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
   </div>
   <div>
-    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">小籠包</span>
+    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
   </div>
   <div>
     <img src="/images/魯肉飯.png" class="object-cover h-28 w-full" />
@@ -533,12 +578,12 @@ Sort in Traditional Chinese
     <span class="block mt-4 text-center text-amber-500">高山茶</span>
   </div>
   <div>
-    <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
+    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">小籠包</span>
   </div>
   <div>
-    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
-    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
+    <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
   </div>
   <div>
     <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
@@ -546,15 +591,7 @@ Sort in Traditional Chinese
   </div>
 </div>
 
-<div v-click class="">
-
-```ts
-items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-stroke', {ignorePunctuation: true }));
-
-Array => ['小籠包', '牛肉麵', '珍珠奶茶', '臭豆腐', '高山茶', '鳳梨酥', '魯肉飯']
-```
-</div>
-<div v-click class="mt-8">
+<div class="">
 
 ```ts
 items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-zhuyin', {ignorePunctuation: true }));
@@ -569,9 +606,73 @@ Array => ['鳳梨酥', '牛肉麵', '魯肉飯', '高山茶', '小籠包', '珍�
 In Traditional Chinese, localeCompare() also works with various attributes that I mentioned before.
 By strokes, by the Phonetic zhuyin.
 
-Or use pinyin for Simplified Chinese.
+This is sorting with the phonetic elements 注音.
+Similar way that we sort Japanese in Gojuon.
 
-Next slides >>>>>
+It would be difficult to understand, if you don't understand 注音.
+
+<b>Next slides >>>>></b>
+-->
+
+---
+
+# Sorting
+
+Sort in Traditional Chinese
+
+<div class="grid grid-cols-7 gap-4 mb-12">
+  <div>
+    <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">小籠包</span>
+  </div>
+  <div>
+    <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
+  </div>
+  <div>
+    <img src="/images/珍珠奶茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">珍珠奶茶</span>
+  </div>
+  <div>
+    <img src="/images/臭豆腐.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">臭豆腐</span>
+  </div>
+  <div>
+    <img src="/images/高山茶.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">高山茶</span>
+  </div>
+  <div>
+    <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
+  </div>
+  <div>
+    <img src="/images/魯肉飯.png" class="object-cover h-28 w-full" />
+    <span class="block mt-4 text-center text-amber-500">魯肉飯</span>
+  </div>
+</div>
+
+<div class="">
+
+```ts
+items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-stroke', {ignorePunctuation: true }));
+
+Array => ['小籠包', '牛肉麵', '珍珠奶茶', '臭豆腐', '高山茶', '鳳梨酥', '魯肉飯']
+```
+</div>
+
+
+
+
+<!--
+This way maybe easier, this is sorting in the total stroke.
+
+We can see the first character of each has more strokes from left to right.
+
+It's amazing that JavaScript support it, right.
+It's all thanks to the open source contributors, especially in the UniHan project, one of the unicode open source project.
+That makes this available.
+
+<b>Next slides >>>>></b>
 -->
 
 
@@ -624,12 +725,20 @@ What happens to the Character that has multiple pronunciation?
          </ul>
     </div>
 </div>
+
 <!--
-This issue only affects Japanese Kanji, or when sorting with Chinese character with phonetic element using Zhuyin or Pinyin.
+So let's think the unresolved issue. 
+What to do with the multiple pronunciation Kanji?
 
-Native speakers know the common variations of the pronouciation, when we process in head, it is processed together.
+The issue affects Japanese Kanji, or Chinese character when sorting with phonetic element using Zhuyin or Pinyin.
 
-Sometimes if the client request to make it in the explicit order, the better way it to map the words into a pre-defined table or array.
+Technically, native speakers know the common variations of the pronouciation, 
+when we process in head, it is processed together, it does not really bother to the native spearkers.
+
+However my understanding could be wrong about Japanese, I would be happy to hear from you, what is the practical solution.
+
+Sometimes if the client request to make it in the explicit order, 
+the better way is to map the words into a pre-defined table or array.
 In the end it will be a fully customized array.
 
 <b>Next slide >>>>></b>

@@ -6,13 +6,14 @@ image: /images/unit_yamamoto.jpg
 # Diversity
 
 <!--
-OIST is a unique graduate university in Japan. We have more than 50% international employees and students.
+OIST is a unique graduate university in Japan. 
+We have more than 50% international members including employees and students.
 
-This is our Cell Signal Unit, with the leading faculty, fellow researcher and students.
+They are the member of Cell Signal Unit, with the leading faculty, fellow researcher and students.
 From one photo we can see how diverse we are.
 
 Therefore English and Japanese are equaly important in OIST.
-Most of content on our website are translated into both languages. Including the offical website and internal sites.
+Most of content on our website are translated into both languages. 
 
 During the project, we have dealt many translation issues.
 In the second part of this talk, I'd like to focus on a few of them for our Japanese and APAC region attendees.
@@ -34,7 +35,7 @@ User Interface translation in Drupal
 ![](/images/2022-08-22-22-58-40.png)
 
 <!--
-Drupal has a well defined translation system in core.
+Drupal has well defined translation system in core.
 Depends on your experience and role, there is always a way for you to make translations.
 
 As a sitebuilder.
@@ -141,6 +142,7 @@ class: 'text-center'
 ---
 
 <div class="hidden">
+
 # More than Words
 </div>
 
@@ -161,7 +163,6 @@ class: 'text-center'
   </h2>
 </div>
 
-
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -170,12 +171,12 @@ class: 'text-center'
 </div>
 
 <!--
-There are more details about localizing user experience from my talk in the latest DrupalCon prague. 
+There are more details about localizing user experience from my talk in the latest DrupalCon Prague. 
 If you're interesting and works on bilingual site often, it would be helpful for you.
 
 But today, I want to address issues especially to the project and related to Japanese language.
 
-Nest slide >>>>>
+<b>Nest slide >>>>></b>
 -->
 
 ---
@@ -266,12 +267,11 @@ https://unsplash.com/photos/T6fDN60bMWY
 
 <!--
 Next issue, let's think about typing in Japanese, Chinese or Korean
-This three languages are aka CJK
+This three languages are often mentioned in the abbreviation, CJK.
 
 It is easy to type latin alphabets on keyboard, how does words being typed in CJK?
 
 <b>Next slide >>>>></b>
-
 -->
 
 ---
@@ -323,8 +323,6 @@ These are pagragraphs in CJK about
 You can see the paragraph rarely has spaces in the sentence.
 To index the content and make it easy to search, usually requires extra treats.
 
-(We use kuromoji when we index the data in Elastice search to get the text indexed and split into words correctly.)
-
 <b>Next slide >>>>></b>
 -->
 ---
@@ -354,7 +352,7 @@ To index the content and make it easy to search, usually requires extra treats.
 </div>
 
 <!--
-How do we type, what's CJK keyboards look like?
+So, How do we type, what's CJK keyboards look like?
 
 From left to right, we see two Traditional Chinese keyboards.
 And there are two Korean keyboard layout and two Japanese layout on in mobile with a "3 by 3" grid or a comapct keyboard layout which has the 50 essential sound characters.
@@ -425,9 +423,8 @@ composition events https://github.com/oist/oist-www/issues94#issuecomment-100966
 -->
 
 <!--
-In this clip, we can find
-
-the english typing works normally, and the Japanese word for Corona, only query when the word is complete.
+In this clip, we can find the English typing works normally, 
+and the Japanese word for Corona, only query when the word is complete.
 
 <b>Next slide >>>>></b>
 -->

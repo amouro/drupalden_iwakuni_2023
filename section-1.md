@@ -11,10 +11,15 @@ image: /images/oist-www-D7.png
 <!--
 This was the old Drupal 7 site, it served us a glorious time, bring us over 30 million visits. Delivered 37 thousands of contents.
 
-The last three years, we doubled the monthly visis. When every lab building finished, when we received the high impact rank in Nature, when our profession won the Nobel prize.
+The last three years, we doubled the monthly visits. 
+
+When every lab building finished, 
+when we received the high impact rank in Nature, 
+when our profession won the Nobel prize.
+
 The website continuously sharing our best news to the world and celebrate with us.
 
-<b>Next slide >>>>></b>
+<b>Next Slide >>>>></b>
 -->
 
 ---
@@ -44,8 +49,11 @@ https://unsplash.com/photos/FQvadXmA524
 -->
 
 <!--
-However, we continue to build dreams, define the future of the research in Japan. 
-Therefore we have set up new goals and need a new website to continue deliver the outcomes in a more effective and flexible way.
+However, we continue to build dreams, 
+define the future of the research in Japan.
+
+Therefore we have set up new goals and need a new website 
+to continue deliver the outcomes in a more effective and flexible way.
 
 <b>Next slide >>>>></b>
 -->
@@ -87,14 +95,23 @@ Therefore we have set up new goals and need a new website to continue deliver th
 </ol>
 
 <!--
-In 2020, OIST has set a strategic plan and started to emphsize the activities in Research, Education and Innovation. 
-It is also our responsibility to raise the awareness of STEM education, contribute to Okinawa and conduct outreach activities in the Japanese society.
+In 2020, OIST has set a strategic plan and 
+started to emphsize the three pillars of activities in Research, Education and Innovation. 
 
-Through the entire project, we kept the three main pillars in mind, and make sure we are align with the organization strategy.
+It is also our responsibility to raise the awareness of STEM education, 
+contribute to Okinawa and conduct outreach activities in the Japanese society.
 
-Regarding the technical spec, we want to bring the better content management experience to the editors.
-Drupal 9 enable us to use Media Library to manage the assets, change the node translation method into field translation.
-Beside Drupal, we want to implement a design system to keep the UX consistent, and allow editors easily reuse web components when creating the content.
+Through the entire project, we kept the three main pillars in mind, 
+and make sure we are align with the organization strategy.
+
+Regarding the technical spec, 
+we want to bring the better content management experience to the editors.
+
+Drupal 9 enable us to use Media Library to manage the assets, 
+change the node translation method into field translation.
+
+Beside Drupal, we want to implement a design system to keep the UX consistent,
+and allow editors reuse web components when creating the content easily.
 
 <b>Next slide >>>>></b>
 -->
@@ -147,21 +164,21 @@ Beside Drupal, we want to implement a design system to keep the UX consistent, a
 <!-- 
 The website project can be divided into 3 major phases.
 
-We conducted a full user research in Dec 2020, to have a better insight from the stackholders, internal and external users.
-Through the study, we know how the user percive us and how we can improve the information architecture.
+We conducted a full user research in Dec 2020. 
+It gave us a better insight from the stackholders, internal and external users.
+Through the study, we know how the user percive us, 
+and how we can improve the information architecture.
 
-The second phase, we started to hired another vendor to migrate content and build the new site in Drupal 9.
+The second phase, we started to hired another vendor to migrate content 
+and build the new site in Drupal 9.
 
-After the vendor finished their tasks, our web team take over the content conversion, recreation, train the content owner to use the new site.
+After the vendor finished the development, our web team take over the content.
+We started to convert and recreate content,
+and then train the content owner to use the new site.
+
 Meanwhile our developer and I continue update and resolve additional issues.
 
-<b><b>Next slide >>>>></b></b>
-
-* User study Dec 2020 ~ Apr 2021
-* Procurement 2021~2022
-* Development Jan 2022 ~ Jun 2022
-* Editing Jun 2022 ~ Dec 2023
-
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -185,8 +202,11 @@ Meanwhile our developer and I continue update and resolve additional issues.
 </div>
 
 <!--
-Last December, after we kick-off the project for two years.
+Last December, two years after we kick-off the project.
 We relaunched the site and it is well received by the OIST community.
+
+Let's have a quick tour through the site.
+<b>Next slide >>>>></b>
 -->
 
 ---
@@ -208,6 +228,18 @@ We relaunched the site and it is well received by the OIST community.
   * Grid example (https://www.oist.jp/style-guide#grid-example)
 
 <!--
+We redefined the color scheme and use the new web component to the entire site.
+
+The megamenu provide user a better navigation map.
+
+Our media editor can manully select related content or let the system choose related content for them.
+
+We integrate Flickr to our site to allow user preview our photo albums here.
+
+For different campaign or special committees, 
+we have microsite feature to let it manage their own content and display their logo
+
+Finally, we have the first style guide to showcase the components we designed for the website.
 
 <b>Next slide >>>>></b>
 -->
