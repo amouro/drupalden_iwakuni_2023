@@ -9,15 +9,16 @@ image: /images/oist-www-D7.png
 </div>
 
 <!--
-This was the old Drupal 7 site, it served us a glorious time, bring us over 30 million visits. Delivered 37 thousands of contents.
+Our old Drupal 7 site served us well, 
+bringing in over 30 million visits and delivering 37,000 pieces of content. 
+In the last three years, we doubled our monthly visits. 
 
-The last three years, we doubled the monthly visits. 
+The website shared our accomplishments with the world, 
+such as when new lab buildings were completed, 
+when we received high impact rankings in Nature, 
+and when our faculty members won the Nobel Prize.
 
-When every lab building finished, 
-when we received the high impact rank in Nature, 
-when our profession won the Nobel prize.
-
-The website continuously sharing our best news to the world and celebrate with us.
+The website continuously celebrate our successes.
 
 <b>Next Slide >>>>></b>
 -->
@@ -49,11 +50,11 @@ https://unsplash.com/photos/FQvadXmA524
 -->
 
 <!--
-However, we continue to build dreams, 
-define the future of the research in Japan.
+However, we continue to strive for innovation and shape the future of research in Japan. 
 
-Therefore we have set up new goals and need a new website 
-to continue deliver the outcomes in a more effective and flexible way.
+In order to achieve these goals, 
+we have set new objectives and needed a new website that 
+could deliver our outcomes in a more effective and flexible way.
 
 <b>Next slide >>>>></b>
 -->
@@ -95,23 +96,21 @@ to continue deliver the outcomes in a more effective and flexible way.
 </ol>
 
 <!--
-In 2020, OIST has set a strategic plan and 
-started to emphsize the three pillars of activities in Research, Education and Innovation. 
+In 2020, OIST set a strategic plan and began to emphasize the three pillars of activities: 
+Research, Education, and Innovation. 
+It is also our responsibility to raise awareness of STEM education, contribute to Okinawa, 
+and conduct outreach activities in the Japanese society.
 
-It is also our responsibility to raise the awareness of STEM education, 
-contribute to Okinawa and conduct outreach activities in the Japanese society.
+Throughout the entire project, 
+we kept these three main pillars in mind,
+and made sure that the website aligned with the organization's strategy.
 
-Through the entire project, we kept the three main pillars in mind, 
-and make sure we are align with the organization strategy.
+From a technical perspective, our goal was to improve the content management experience for editors. 
+Drupal 9 allowed us to use the Media Library to manage assets, 
+and change the node translation method to field translation. 
 
-Regarding the technical spec, 
-we want to bring the better content management experience to the editors.
-
-Drupal 9 enable us to use Media Library to manage the assets, 
-change the node translation method into field translation.
-
-Beside Drupal, we want to implement a design system to keep the UX consistent,
-and allow editors reuse web components when creating the content easily.
+In addition to Drupal, we also implemented a design system to maintain consistency in the user experience, 
+and enable editors to easily reuse web components when creating content.
 
 <b>Next slide >>>>></b>
 -->
@@ -162,21 +161,19 @@ and allow editors reuse web components when creating the content easily.
 </ol>
 
 <!-- 
-The website project can be divided into 3 major phases.
+The website project was divided into 3 main phases:
 
-We conducted a full user research in Dec 2020. 
-It gave us a better insight from the stackholders, internal and external users.
-Through the study, we know how the user percive us, 
-and how we can improve the information architecture.
+We conducted a comprehensive user research with a vendor in December 2020 
+to gain better understanding of the stakeholders, both internal and external users. 
+The study helped us identify how users perceive us,
+and how we can improve the website's information architecture.
 
-The second phase, we started to hired another vendor to migrate content 
-and build the new site in Drupal 9.
+In the second phase, 
+we hired another vendor to migrate the content and build the new website using Drupal 9.
 
-After the vendor finished the development, our web team take over the content.
-We started to convert and recreate content,
-and then train the content owner to use the new site.
-
-Meanwhile our developer and I continue update and resolve additional issues.
+After the vendor completed the development, our web team took over the content. 
+We converted and recreated the content and trained the content owners on how to use the new website. 
+Our developer and I also worked on updating and resolving any additional issues.
 
 <b>Next slide >>>>></b>
 -->
@@ -202,10 +199,12 @@ Meanwhile our developer and I continue update and resolve additional issues.
 </div>
 
 <!--
-Last December, two years after we kick-off the project.
-We relaunched the site and it is well received by the OIST community.
+Last December, two years after we began the project, 
+we successfully relaunched the website. 
+It has been well-received by the OIST community.
 
-Let's have a quick tour through the site.
+Let's take a quick tour of the site now.
+
 <b>Next slide >>>>></b>
 -->
 
@@ -228,18 +227,17 @@ Let's have a quick tour through the site.
   * Grid example (https://www.oist.jp/style-guide#grid-example)
 
 <!--
-We redefined the color scheme and use the new web component to the entire site.
+We redefined the color scheme and used new web components throughout the site. 
 
-The megamenu provide user a better navigation map.
+The mega menu provides users with a better navigation map. 
 
-Our media editor can manully select related content or let the system choose related content for them.
+Our media editor can manually select related content or let the system choose related content for them. 
 
-We integrate Flickr to our site to allow user preview our photo albums here.
+We integrated Flickr into the site to allow users to preview our photo albums. 
 
-For different campaign or special committees, 
-we have microsite feature to let it manage their own content and display their logo
+For different campaigns or special committees, we have a microsite feature which allows them to manage their own content and display their own logo. 
 
-Finally, we have the first style guide to showcase the components we designed for the website.
+Finally, we have also created a style guide to showcase the components we designed for the website.
 
 <b>Next slide >>>>></b>
 -->
