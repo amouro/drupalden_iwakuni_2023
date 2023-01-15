@@ -19,15 +19,13 @@ image: /images/white-box-kelli-mcclintock.jpg
 </div>
 
 <!--
-Here comes the technical part of our project. 
+Now, let's move on to the technical aspect of our project. 
+I would like to provide a high-level overview of the migration process and how we managed the development project.
 
-I would like to share a high-level overview of migration and how we manage the development project.
-
-Migration is the first and the key factor to our project.
-All the important content and assets must be migrated.
-
-It is not only about the content node migration, 
-we also need to migrate files, images which were not managed in the CMS.
+Migration was the first and most important factor in our project. 
+All important content and assets needed to be migrated. 
+It wasn't just about migrating the content nodes, 
+we also had to migrate files and images that were not managed in the CMS.
 
 <b>Next slide >>>>></b>
 -->
@@ -84,12 +82,12 @@ we also need to migrate files, images which were not managed in the CMS.
 </div>
 
 <!-- 
-Drupal 7 didn't have the Media Library, 
-we used to use video and photo content type to contain the assets.
-And later use shortcode to reference them in the content body.
+In Drupal 7, there was no Media Library, 
+so we used the "video" and "photo" content types to contain assets, 
+and later used shortcodes to reference them in the content body.
 
-This means we must migrate all the 3,000 content nodes and over 6,000 media assets first.
-And then convert all the inline shortcode into the new media embed format.
+This means we had to migrate all 3,000 content nodes and over 6,000 media assets first, 
+and then convert all the inline shortcodes into the new media embed format.
 
 <b>Next slide >>>>></b>
 -->
@@ -145,15 +143,13 @@ And then convert all the inline shortcode into the new media embed format.
 
 
 <!-- 
-In the past, content editor were able to use IMCE 
-to upload file and images to the server directly.
+In the past, content editors were able to use IMCE to upload files and images to the server directly. 
 
-During the migration, we converted over 1,500 inline files sources into media types. 
+During the migration, we converted over 1,500 inline file sources into media types, 
+including images, documents, and embedded videos. 
 
-Including image, document and embedded videos.
-
-This doesn't only make sure we have all files in the managed system, 
-it also makes the system more secure.
+This not only ensures that all files are in the managed system, 
+but also makes the system more secure.
 
 <b>Next slide >>>>></b>
 -->
@@ -213,22 +209,16 @@ it also makes the system more secure.
 
 
 <!--
-At the end we migrate more than 10,000 content and assets 
-via the Drupal Migrate API script.
+In total, we migrated more than 10,000 contents and assets via the Drupal Migrate API script. 
 
-These code are not disposed after the migration is finished.
-The migrate profile is kept in use in the project 
-to provide mockup data for testing purpose.
+The migrate profile was kept in use in the project to provide mockup data for testing purposes. 
 
-During each new feature development,
-our local environment and the cloud CI environment builds the site with the mockup data every time.
+During each new feature development, 
+our local environment and cloud CI environment builds the site with the mockup data every time. 
+This allows us to run unit tests repeatedly and make our deployment more robust and reliable. 
 
-This allows us to run the unit test over and over, 
-and make our deployment more robust and reliable.
-
-Migration is critical to the project. 
-It cost lots of efforts to review the content and validate the result.
-However it really worth it and promise the success of the project.
+Migration was critical to the project and required a lot of effort to review the content and validate the results, 
+but it was worth it and played a crucial role in the project's success.
 
 <b>Next slide >>>>></b>
 -->
@@ -279,16 +269,21 @@ However it really worth it and promise the success of the project.
 <!--
 Beyond migration, there were keys that made the project success.
 
-First, lots of communicattion.
-We have to keep the team and the supervisor aware of our progress.
-OIST is a large organization with many decision chain.
-When necessary, we meet the stackholder directly, 
-and find someone who can support and communicate to the right channel.
+1. Effective communication: 
+We made sure to keep the team and supervisor informed of our progress. 
+OIST is a large organization with many decision-making channels, 
+so when necessary, we met with stakeholders directly, 
+and found someone who could support and communicate through the right channels.
 
-Second, use tool well to manage the project tasks and assist the communications.
-There is no best tool, but only the right tool that all team members are willing to participate.
+2. Using tools effectively: 
+We used tools effectively to manage project tasks and assist with communication. 
+There is no best tool, but we found the right tools that all team members were willing to use.
 
-Lastly, keep testing and make it automatic to reduce the repeating task and risks.
+3. Testing and automation: 
+To reduce repetitive tasks and risks, 
+we rely on testing and automating processes as much as possible.
+
+All these factors worked together to make the project a success.
 
 <b>Next slide >>>>></b>
 -->
@@ -362,14 +357,21 @@ Lastly, keep testing and make it automatic to reduce the repeating task and risk
 </div>
 
 <!--
-The first stage when we worked with the vendor.
-The vendor use GitHub and its Project tool to manage the tasks.
+During the first stage of the project when we worked with the vendor, 
+they used GitHub and its Project tool to manage tasks. 
 
-Both their developer and can communicate freely instead of only via their project manager.
-This accelerate the development, make the work transparent and increase the mutual trust.
+This allowed their developers and us to communicate freely, 
+rather than only through the project manager. 
 
-After the project delivered, we introduced Shortcut to manage the dev task and content creation task together on the same platform.
-With Shortcut, we can integrate GitHub to it to know the status of the PR and sync the dev task status.
+This accelerated development, made the work transparent, 
+and increased mutual trust.
+
+After the project was delivered, 
+we introduced Shortcut to manage both development and content creation tasks on the same platform. 
+
+With Shortcut, 
+we were able to integrate GitHub to track the status of pull requests,
+and syncing development task status.
 
 <b>Next slide >>>>></b>
 -->
@@ -399,9 +401,8 @@ image: /images/github_project_planner.png
 </div>
 
 <!--
-We all very familiar with GitHub or similar tools. 
-
-Its project tool is now more mature and easy to use.
+Many of us are already familiar with GitHub, 
+and their project management tools have become more mature and user-friendly.
 
 <b>Next slide >>>>></b>
 -->
@@ -431,13 +432,13 @@ image: /images/shortcut_storyboard_docs.png
 </div>
 
 <!--
-Shortcut is a task management system. It can manage dev and editing tasks easily. 
+Shortcut is a task management system that can easily manage both development and editing tasks. 
 
-Given the nature of the tasks of dev and editing need different workflows, 
-we can create different workflow on Shortcut for them.
-And then bring them into the same Epic or Iteration easily.
+Given that the tasks of development and editing require different workflows, 
+we can create different workflows in Shortcut for them, 
+and then bring them into the same Epic or Iteration easily. 
 
-This is very helpful for a multi-function team.
+This is very helpful for a team with multiple functions.
 
 <b>Next slide >>>>></b>
 -->
@@ -467,9 +468,10 @@ image: /images/shortcut_issue_github.png
 </div>
 
 <!--
-In Shortcut, we can quickly sync the status of the dev task with the GitHub.
+In Shortcut, we can quickly sync the status of dev tasks with GitHub. 
 
-Although they are two platform, we can work between them seemlessly.
+Even though they are two separate platforms, 
+we can work between them seamlessly.
 
 <b>Next slide >>>>></b>
 -->
@@ -515,20 +517,23 @@ Although they are two platform, we can work between them seemlessly.
 </div>
 
 <!--
-We're a two developer dev team, and we need to focus on dev task and resolving issues.
+We are a two-developer development team, 
+and need to focus on development tasks and resolving issues. 
 
-The CI/CD becomes the 3rd developer, 
-who check the coding standard and deploy the code for us.
+The CI/CD process acts as a third developer, 
+checking the coding standard and deploying the code for us. 
 
-So our developers can quickly throw the commit to a online dev environment and then switch to another task.
+This allows our developers to quickly move on to the next task,
+after committing the code to the online development environment. 
 
-Once the commit passes the CI/CD workflow.
-We can focus on reviewing the logic of the code in PR.
+Once the commit passes the CI/CD workflow, 
+we can then focus on reviewing the logic of the code in pull requests, 
+and then ask the CI/CD to deploy it to the production site. 
 
-And then ask the CI/CD to continue deploy it to the production site.
+With all the tools, scripts, and continuous communication, 
+we were able to complete the project smoothly. 
 
-With all the tools, scripts and continuous communication, we complete the project smoothly.
-Of course, all the deligent team member is the core that make the project successful.
+Of course, the diligent team members were the core of the project's success.
 
 <b>Next slide >>>>></b>
 -->
