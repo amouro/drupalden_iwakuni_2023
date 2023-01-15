@@ -6,17 +6,20 @@ image: /images/unit_yamamoto.jpg
 # Diversity
 
 <!--
-OIST is a unique graduate university in Japan. 
-We have more than 50% international members including employees and students.
+OIST is a unique graduate university in Japan, 
+with over 50% of our members being international, 
+including employees and students. 
 
-They are the member of Cell Signal Unit, with the leading faculty, fellow researcher and students.
-From one photo we can see how diverse we are.
+Our Cell Signal Unit is a diverse example, 
+with leading faculty, fellow researchers, and students from all over the world. 
 
-Therefore English and Japanese are equaly important in OIST.
-Most of content on our website are translated into both languages. 
+As a result, English and Japanese are equally important at OIST, 
+and most of the content on our website is translated into both languages. 
 
-During the project, we have dealt many translation issues.
-In the second part of this talk, I'd like to focus on a few of them for our Japanese and APAC region attendees.
+During the project, we dealt with many translation issues, 
+and in the second part of this talk, 
+I'd like to focus on a few of them, 
+particularly for our Japanese and APAC region attendees.
 
 <b>Next slide >>>>></b>
 -->
@@ -36,12 +39,12 @@ User Interface translation in Drupal
 
 <!--
 Drupal has well defined translation system in core.
-Depends on your experience and role, there is always a way for you to make translations.
+Depends on your experience and role, there are always ways for you to make translations.
 
-As a sitebuilder.
-We can translated the node with field translation enabled.
+As a sitebuilder, 
+we can translate nodes with field translation enabled. 
 
-And we can translate many strings appear in the UI.
+Also, we can translate many strings that appear in the user interface.
 
 <b>Next slide >>>>></b>
 -->
@@ -70,7 +73,7 @@ Translation in Twig
 
 <!--
 As a themer.
-We use TWIG to mark translatable sentences with variable in it.
+We use TWIG to mark translatable sentence with variable in it.
 
 <b>Next slide >>>>></b>
 -->
@@ -95,7 +98,7 @@ We can mark the translatable string with the t() function.
 
 It is also capable to use dynamic variable in a sentence.
 
-However, there is chance that we need a translation context, 
+However, there may be chances that we need a translation context, 
 because a word could be verb or noun or has more than one meaning.
 
 <b>Next slide >>>>></b>
@@ -171,10 +174,11 @@ class: 'text-center'
 </div>
 
 <!--
-There are more details about localizing user experience from my talk in the latest DrupalCon Prague. 
-If you're interesting and works on bilingual site often, it would be helpful for you.
+There are more details about localizing user experience in my talk at the latest DrupalCon Prague.
 
-But today, I want to address issues especially to the project and related to Japanese language.
+If you're interested and work on bilingual sites often, it would be helpful for you.
+
+But today, I want to focus on issues specific to the project and related to the Japanese language.
 
 <b>Nest slide >>>>></b>
 -->
@@ -194,8 +198,11 @@ YYYY<span class="text-blue-400">年</span>mm<span class="text-blue-400">月</spa
 🇯🇵 Japan 🇹🇼 Taiwan
 
 <!--
-In Japan as well as Taiwan, we are used to use this format for the date. 
-Starting from Year to month and day.
+One issue to consider is the date format. 
+
+In Japan, as well as Taiwan, 
+we typically use a format that starts with the year, 
+followed by the month and day.
 
 <b>Next slide >>>>></b>
 -->
@@ -210,17 +217,15 @@ layout: fact
 <span class="text-blue-400">Sep. 12</span> vs. <span class="text-teal-400">Dec. 9</span>
 
 <!--
-In other country we often see this date format.
+In other countries, we often see the date format, 
+which can be interpreted as either September 12th or December 9th, 
+depending on the country. 
 
-Is it Sep. 12 or Dec. 9?
+For example, most European countries read it as December 9th, 
+while in the United States it is read as September 12th.
 
-The answer could be both.
-
-Because most of european country they read Dec. 9th, 
-while in the States of America reads Sep. 12
-
-In our institute, we have diverse members from the world, 
-we have to find a common way to make sure our understanding of information are on the same page.
+Given the diversity of our institute's members, 
+we have to find a common way to ensure our understanding of information is consistent.
 
 <b>Next slide >>>>></b>
 -->
@@ -234,7 +239,8 @@ layout: fact
 <span class="text-sky-500">ISO 8601 Formats</span>
 
 <!--
-Therefore, we use ISO 8601 format in English UI, as it is same order of format for Japanese UI.
+Therefore, we use the ISO 8601 format in English UI, 
+as it is same order of format for the Japanese UI.
 
 <b>Next slide >>>>></b>
 -->
@@ -266,10 +272,11 @@ https://unsplash.com/photos/T6fDN60bMWY
 -->
 
 <!--
-Next issue, let's think about typing in Japanese, Chinese or Korean
-This three languages are often mentioned in the abbreviation, CJK.
+Another issue to consider is typing in Japanese, Chinese or Korean, 
+often referred to as CJK languages. 
 
-It is easy to type latin alphabets on keyboard, how does words being typed in CJK?
+Typing Roman alphabets on a keyboard is relatively easy, 
+but how are words typed in CJK languages?
 
 <b>Next slide >>>>></b>
 -->
@@ -316,12 +323,11 @@ It is easy to type latin alphabets on keyboard, how does words being typed in CJ
 </div>
 
 <!--
-These are pagragraphs in CJK about 
+Here are some paragraphs in CJK about
+"What to do if you receive a positive COVID-19 notification from the health center"
 
-"What to do if you receive a positive COVID-19 notification from the public health center"
-
-You can see the paragraph rarely has spaces in the sentence.
-To index the content and make it easy to search, usually requires extra treats.
+You can see that in CJK languages the sentences rarely have spaces. 
+To index the content and make it easy to search, extra treatment is usually required.
 
 <b>Next slide >>>>></b>
 -->
@@ -355,9 +361,10 @@ To index the content and make it easy to search, usually requires extra treats.
 So, How do we type, what's CJK keyboards look like?
 
 From left to right, we see two Traditional Chinese keyboards.
-And there are two Korean keyboard layout and two Japanese layout on in mobile with a "3 by 3" grid or a comapct keyboard layout which has the 50 essential sound characters.
+And there are two Korean keyboard layout and two Japanese layout on in mobile, 
+or a comapct keyboard layout that has 50 essential sound characters.
 
-For those who you don't know the languages, they looks like puzzles.
+For those who you don't know the languages, they may look like puzzles.
 
 <b>Next slide >>>>></b>
 -->
@@ -374,7 +381,7 @@ For those who you don't know the languages, they looks like puzzles.
 | 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 | zh-hans |
 
 <!--
-When typing the words, the key strokes are vary.
+When typing the words, the keystrokes vary.
 
 For the word "Computer" we could also tell it is different in Traditional Chinese use in Taiwan or Simplified Chinese in China.
 
@@ -395,16 +402,15 @@ What do you see?
 </video>
 
 <!-- 
-This is a short clip shows "how we type the search keyword in the autocompleted search box in Japanese"
-What do you find in this clip?
+In the clip, it shows that inputting Japanese Kanji requires typing one to four, 
+or even more phonetic elements. 
 
-- Input Chinese or Japanese Kanji requires one to four or even more phonetic elements
-- There are different words in Kanji which has the same pronouciation
+Additionally, there are different words in Kanji which have the same pronunciation. 
 
-So, there is a problem here that is annoying to CJK users.
-The search box triggers the search too early before the actual keyword is completed.
+This can lead to an issue in the search box where the search is triggered too early before the actual keyword is completed, 
+which can be annoying for the users. 
 
-This can be improved by implementing special JavaScript event method.
+This issue can be improved by implementing a special JavaScript event method to wait for the completion of the keyword input before triggering the search.
 
 <b>Next slide >>>>></b>
 -->
@@ -424,7 +430,7 @@ composition events https://github.com/oist/oist-www/issues94#issuecomment-100966
 
 <!--
 In this clip, we can find the English typing works normally, 
-and the Japanese word for Corona, only query when the word is complete.
+and the Japanese word for Corona, only queries the results when the word is complete.
 
 <b>Next slide >>>>></b>
 -->
@@ -470,15 +476,16 @@ Implement `CompositionEvent` to avoid trigger search too early.
 
   // TODO find the trace of autocomplete js in Drupal 8 or even 7
 
-  In Drupal, there are autocomplete field for tags or referencing entities.
-  The core had the issue before until it has been fixed in 2016. Thanks to the Drupal contributors.
+In Drupal, there are autocomplete fields for tags or referencing entities. 
+The core had the issue before, but it was fixed in 2016, 
+thanks to the Drupal contributors.
 
-  Mainly it is the CompositionEvent helps us identify the special moment when the typing is finished.
-  When we made this custom autocomplete search box, we have to implement the event, too
+Mainly, it is the CompositionEvent that helps us identify the special event when the typing is finished. 
+When we created this custom autocomplete search box, we had to implement the event as well.
 
-  1. First we detect the starting point of the CJK input method.
-  2. And wait until the word is decided, as we see the compositionEnd event happens.
-  3. And then we send our the AJAX request.
+1. First, we detect the starting point of the CJK input method.
+1. Next, we wait until the word is decided, as we see the compositionEnd event happen.
+1. Finally, we send the AJAX request.
 
 <b>Next slide >>>>></b>
 -->
