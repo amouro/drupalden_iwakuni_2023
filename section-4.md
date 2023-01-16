@@ -198,7 +198,7 @@ Array
 </div>
 
 <!--
-The ideal order in Japanese language should looks like this.
+The ideal order in Japanese language should looks like this on the right.
 Starting with Symbols, Numbers, Alphabets like in English.
 
 And than Hiragana, Katagana, the last part will be the Kanji.

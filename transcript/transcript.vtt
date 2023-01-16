@@ -211,7 +211,7 @@ In addition to Drupal, we also implement a design system to maintain the consist
 
 53
 00:04:56.770 --> 00:05:00.610
-The website project was divided into 3 main faces.
+The website project was divided into 3 main phases.
 
 54
 00:05:00.880 --> 00:05:13.519
@@ -259,7 +259,7 @@ Let's take a quick tour of the site now
 
 65
 00:06:07.840 --> 00:06:12.840
-we redefine the color scheme and use the new web component throughout the site.
+We redefine the color scheme and use the new web component throughout the site.
 
 66
 00:06:14.030 --> 00:06:18.150
