@@ -59,8 +59,9 @@ fonts:
 <!--
 [日本語]
 
-こんにちは、私の名前はクリスです。今日はDrupalDEN岩国でスペシャルトークをすることになり、光栄に思っています。
-今日は英語で技術的な内容を発表した方がやりやすいのですが、それでも後で日本語でお話しして、ご意見をいただくのが楽しみです。
+こんにちは、クリスと申します。今日はDrupalDEN岩国でスペシャルトークをすることになり、光栄です。
+今日は沖縄科学技術大学院大学のリニューアルされたウェブサイトを発表します。
+英語で技術的な内容を発表した方がやりやすいのですが、それでも後で日本語でお話しして、ご意見をいただくのが楽しみです。
 
 [英語]
 
@@ -239,7 +240,7 @@ The most important things are in the detail.
 
 It is all because the developer, designer worked on every details to bring the best UX to our user.
 
-Lets to look closer, and take the challenge, deal with the devil, we will find the glorious miracle in the end.
+Let's look closer, and take the challenge, deal with the devil, we will find the glorious miracle in the end.
 
 <b>Next slide >>>>></b>
 -->

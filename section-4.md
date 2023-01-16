@@ -27,9 +27,9 @@ https://unsplash.com/photos/AGtksbL8z2c
 <!--
 After the typing issue, let's see the sorting issue.
 
-In English we often sort with the alphabet for title of articles, taxonomy tags, or names for example.
+In English, we often sort using the alphabet for titles of articles, taxonomy tags, or names, for example.
 
-It is entirely different when sorting in Japanese or Chinese.
+However, it is entirely different when sorting in Japanese or Chinese.
 
 <b>Next slide >>>>></b>
 -->
@@ -60,8 +60,7 @@ It is entirely different when sorting in Japanese or Chinese.
 </div>
 
 <!--
-Since this event is held in Japan.
-Most of you know it is sort with the order of the Gojuon.
+In Japanese language, most of us know it is sort with the order of the Gojuon.
 
 <b>Next slide >>>>></b>
 -->
@@ -132,8 +131,8 @@ $array = [
 
 
 <!--
-When we have an array composed by the Latin, Numbers, Hiragana, Katagana and Kanji.
-How do we sort them correctly?
+When we have an array composed of Latin letters, numbers, Hiragana, Katakana, and Kanji, 
+how do we sort them correctly?
 
 <b>Next slide >>>>></b>
 -->
@@ -205,7 +204,7 @@ Starting with Symbols, Numbers, Alphabets like in English.
 And than Hiragana, Katagana, the last part will be the Kanji.
 
 Hiragana and Katagana follows the order of Gojuon.
-What is the order the Kanji?
+What is the order in Kanji?
 
 <b>Next slide >>>>></b>
 -->
@@ -233,9 +232,11 @@ Sort in Japanese
 
 
 <!-- 
-If we using sort() function directly, 
-it is sorting by the index number of the character in the Unicode table. 
-However it doesn't make sense to the Japanese speaker, isn't it.
+If we use the sort() function directly, 
+it will sort the array based on the index number of each character in the Unicode table. 
+
+However, this doesn't make sense for Japanese speakers, 
+as the order of the characters doesn't reflect the proper way to sort them in the language.
 
 <b>Next slide >>>>></b>
 -->
@@ -269,15 +270,12 @@ Array => ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レ
 
 
 <!--
-For Japanese, it is also order by the phonetic order, including the Kanji.
+One solution is to use the JavaScript function localeCompare(). 
+This function sorts Kanji based on the pronunciation of the first character, 
+and then the next character if the first character is the same. 
 
-There is a solution in JS called localeCompare().
-The Kanji will be sorted with the pronouciation of the first character 
-and then the next character if first character is the same.
-
-PHP does have similar feature, 
-however from the backend, 
-please prioritize using database query to get a better sorting result.
+In PHP, there is a similar function, 
+but it is recommended to use a database query for better sorting results from the backend.
 
 <b>Next slide >>>>></b>
 
@@ -310,13 +308,25 @@ Keiko kono
 [い(1-2), おぎ(1-5), かく(2-1), がん(2-1.1), さ(3-1), なか(5-1), ふじ(6-3)]
 ```
 
+  <div class="mt-8 grid grid-cols-3 gap-2 content-center">
+    <div class="text-xl text-sky-500 font-bold row-span-2 text-right leading-compact">
+      河野
+    </div>
+    <div class="grid grid-rows-2 gap-2">
+      <div>
+        かわの ✅
+      </div>
+      <div>
+        こうの ✅
+      </div>
+    </div>
+  </div>
+
   </div>
   <div class="flex-1 ">
     <img src="/images/2022-09-04-17-28-34.png" class="" />
   </div>
 </div>
-
-
 
 <!--
 However this is not perfect,
@@ -324,6 +334,8 @@ there is one word mis-placed in the middle. 岩下
 
 It is because the Kanji has another pronounciation.
 And the first character is read in an alternative way ”がん” rather than "いわ".
+
+Another example, there is another last name can be called either かわの or こうの.
 
 In Japanese or in Mandarin Chinese the character could have more than one pronounciation.
 
@@ -378,9 +390,9 @@ In 2012, 683 was reviewed and combined into single pronounciation.
 
 <!--
 In the official definition from the Ministry of Education of Taiwan, 
-there were 1,263 out of 5,000 common used traditional Chinese characters.
-Around ten years ago, the officials reviewed and merged a lot of them.
-And it was reduced to 580.
+there were 1,263 out of 5,000 commonly used traditional Chinese characters. 
+Around ten years ago, 
+officials reviewed and merged many of them, reducing the number to 580.
 
 <b>Next slide >>>>></b>
 -->
@@ -411,7 +423,8 @@ Let's take the Kanji for example.
 
 It has more pronounciation due to different cultural context.
 
-Four of them or inherited from ancient Chinese in various eras, and another four represent things in the original Japanese language 
+Four of them are inherited from ancient Chinese in various eras,
+and another four represent in the original Japanese language.
 
 Next slides >>>>>
 -->
@@ -448,9 +461,11 @@ Multiple pronunciation
 </div>
 
 <!--
-The original Chinese character is this one, and it has three pronounciations.
+The original Chinese character looks very similar, 
+and it has three pronounciations.
 
-The character stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for verb "To appreciate".
+The character stands for 樂 (yue) Music, 
+or 樂 (le) for Happy or Happiness or 樂 (yao) for verb "To appreciate".
 
 <b>Next slide >>>>></b>
 -->
@@ -461,7 +476,7 @@ The character stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for ver
 
 Sort in Traditional Chinese
 
-<div class="grid grid-cols-7 gap-4 mb-12">
+<div class="grid grid-cols-7 gap-4 mb-12 mt-16">
   <div>
     <img src="/images/牛肉麵.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">牛肉麵</span>
@@ -493,12 +508,13 @@ Sort in Traditional Chinese
 </div>
 
 <!--
-So we now know Japanese sort by pronouciation. How about Mandarin?
+So we now know Japanese sort by pronouciation. 
+How about Mandarin Chinese?
 
 Let's bring some delicious Taiwanese food here.
 They are in the order of my preference. :)
 
-How do we sort them using their attributes?
+How do we sort them names using their attributes?
 Let's first see what options do we have.
 
 <b>Next slide >>>>></b>
@@ -519,7 +535,7 @@ Let's first see what options do we have.
   </div>
   <div class="">
     <div class="text-2xl">
-      <ul>
+      <ul class="pt-4">
         <li class="font-bold text-sky-600">Radical Strokes 
           <div class="text-gray-500 font-normal text-lg">部首 + 画数順</div>
         </li>
@@ -560,7 +576,7 @@ Bopomofo is the predominant phonetic system in teaching, reading and writing in 
 
 Sort in Traditional Chinese
 
-<div class="grid grid-cols-7 gap-4 mb-12">
+<div class="grid grid-cols-7 gap-4 mb-12 mt-16">
   <div>
     <img src="/images/鳳梨酥.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">鳳梨酥</span>
@@ -620,7 +636,7 @@ It would be difficult to understand, if you don't understand 注音.
 
 Sort in Traditional Chinese
 
-<div class="grid grid-cols-7 gap-4 mb-12">
+<div class="grid grid-cols-7 gap-4 mb-12 mt-16">
   <div>
     <img src="/images/小籠包.png" class="object-cover h-28 w-full" />
     <span class="block mt-4 text-center text-amber-500">小籠包</span>

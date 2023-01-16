@@ -373,13 +373,15 @@ For those who you don't know the languages, they may look like puzzles.
 
 # Input method
 
+<div class="mt-16">
+
 | Keyword      | Segments      | Segments | Lang |
 | ------------ | ------------- | -------- | ---- |
 | Computer | | 8 | en |
 | コンピューター (konpyūtā)| kon pyu- ta- | 10 | jp-ja |
 | 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 | zh-hant |
 | 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 | zh-hans |
-
+</div>
 <!--
 When typing the words, the keystrokes vary.
 
