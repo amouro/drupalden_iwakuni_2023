@@ -2,15 +2,16 @@ WEBVTT
 
 1
 00:00:05.640 --> 00:00:08.550
-こんにちは、クリスと申します。
-
+こんにちは、クリスと申します。今日はDrupalDEN岩国でスペシャルトークをすることになり、光栄です。
+今日は沖縄科学技術大学院大学の
 2
 00:00:20.780 --> 00:00:25.009
-during our reserate, our website.
+リニューアルされたウェブサイトを発表します。
+英語で技術的な内容を発表した方がやりやすいのですが、
 
 3
 00:00:32.220 --> 00:00:35.040
-the
+それでも後で日本語でお話しして、ご意見をいただくのが楽しみです。
 
 4
 00:00:43.100 --> 00:00:45.610
@@ -22,7 +23,7 @@ and my honor to be here to give a special talk today at the DrupalCamp Iwakuni.
 
 6
 00:00:51.120 --> 00:00:53.269
-Our University OIST
+Our University, OIST
 
 7
 00:00:53.450 --> 00:00:56.940
@@ -33,44 +34,44 @@ build the Drupal 7 site in 2011,
 which was the first year of its release.
 
 9
-00:01:00.030 --> 00:01:07.300
-Drupal 7 had the longest lifespan among all the versions, and brought significant changes
+00:01:00.030 --> 00:01:04.300
+Drupal 7 had the longest lifespan among all the versions, 
 
 10
-00:01:07.610 --> 00:01:08.919
-to this platform.
+00:01:04.510 --> 00:01:08.919
+and brought significant changes to this platform.
 
 11
 00:01:09.450 --> 00:01:15.560
 One of these change was the integration of CCK as the content type entity field.
 
 12
-00:01:16.140 --> 00:01:17.309
-He wrote
+00:01:16.140 --> 00:01:19.309
+It brought Views to the core.
 
 13
-00:01:17.380 --> 00:01:23.989
-views to the core. Additionally, image cache was transformed into that image style
+00:01:19.380 --> 00:01:23.989
+Additionally, ImageCache was transformed into that ImageStyle.
 
 14
 00:01:24.370 --> 00:01:25.439
-last year
+Last year,
 
 15
 00:01:25.700 --> 00:01:31.679
-we underwent a two-year journey to rebuild and monitor the website, using Drupal
+we underwent a two-year journey to rebuild and modernize the website using Drupal 9.
 
 16
 00:01:33.150 --> 00:01:41.479
-in the first part of the talk I will discuss the development and the project management process whims through during the website revealed
+In the first part of the talk I will discuss the development and the project management process went through during the website rebuild.
 
 17
 00:01:42.280 --> 00:01:44.120
-in the second part of my talk
+In the second part of my talk,
 
 18
 00:01:44.330 --> 00:01:50.089
-will delve that deeper into the challenges we faced when localizing the website
+will delve deeper into the challenges we faced when localizing the website
 
 19
 00:01:50.160 --> 00:01:53.879
@@ -90,7 +91,7 @@ a little bit about myself.
 
 23
 00:02:10.720 --> 00:02:15.389
-I'm. A Duba developer with 14 years of experience in drupal development.
+I'm a Drupal developer with 14 years of experience in Drupal development.
 
 24
 00:02:16.590 --> 00:02:24.499
@@ -98,75 +99,75 @@ I have extensive experience in web design and development in traditional Chinese
 
 25
 00:02:24.760 --> 00:02:31.319
-I'm. Also a member of the Drupal community, and a former group leader in Taiwan
+I'm also a member of the Drupal community, and a former group leader in Taiwan
 
 26
 00:02:31.920 --> 00:02:40.630
-outside of Jubal. I'm. Also interested in coffee, Germany, and cats, and welcome any conversation about those topics as well.
+Outside of Drupal, I'm also interested in coffee, Germany, and cats, and welcome any conversation about those topics as well.
 
 27
 00:02:41.540 --> 00:02:43.309
 Before jumping to the topic.
 
 28
-00:02:43.400 --> 00:02:47.489
-Please note that any mention of the vendor or products in this talk.
+00:02:43.400 --> 00:02:50.390
+Please note that any mention of the vendor or products in this talk are not endorsement
 
 29
 00:02:47.580 --> 00:02:48.620
-not
+
 
 30
 00:02:48.760 --> 00:02:50.390
-endorsement.
+
 
 31
 00:02:50.580 --> 00:02:55.969
-Our old Drupal 7 side served as well. Bring in over 30
+Our old Drupal 7 side served us well. Bringing in over 30 million visits,
 
 32
 00:02:56.030 --> 00:03:01.170
-million visits, and deliver 37,000 pieces of mountain.
+and deliver 37,000 pieces of mountain.
 
 33
 00:03:01.390 --> 00:03:05.340
-In the last 3 years we doubled our monthly visit
+In the last 3 years we doubled our monthly visit.
 
 34
 00:03:06.380 --> 00:03:14.369
-the website, share our accomplishment with the world, such as when we need to have a new lab building were completed
+The website shares our accomplishment with the world, such as when we have a new lab building were completed
 
 35
 00:03:14.460 --> 00:03:22.130
-when we received high impact rankings in nature, and when our faculty member won the Nobel Prize recently.
+when we received high impact rankings in Nature, and when our faculty member won the Nobel Prize recently.
 
 36
 00:03:23.100 --> 00:03:27.019
-the website continuously to celebrate the success.
+The website continuously to celebrate the success.
 
 37
 00:03:27.790 --> 00:03:35.170
-however, we continue to strive for innovation and shape the future of research in Japan.
+However, we continue to strive for innovation and shape the future of research in Japan.
 
 38
-00:03:35.550 --> 00:03:37.270
-In order to reach
+00:03:35.550 --> 00:03:38.790
+In order to reach these goals.
 
 39
-00:03:37.480 --> 00:03:38.790
-this goes.
+00:03:38.790 --> 00:03:38.850
+
 
 40
 00:03:38.870 --> 00:03:48.440
-we have to set the new objectives and needed a new website that could deliver our outcome in a more effective and flexible way
+We have to set the new objectives and needed a new website that could deliver our outcome in a more effective and flexible way.
 
 41
 00:03:49.440 --> 00:03:50.710
-in 2,020
+In 2020 OIST set a
 
 42
 00:03:50.960 --> 00:03:52.470
-OISTer
+
 
 43
 00:03:52.620 --> 00:03:55.369
@@ -174,7 +175,7 @@ strategic plan, and begin to
 
 44
 00:03:55.390 --> 00:04:01.909
-emphasize the 3 Peter of activities, research, education, and innovation.
+emphasize the 3 pillar of activities: Research, Education, and Innovation.
 
 45
 00:04:02.200 --> 00:04:12.700
@@ -182,31 +183,31 @@ It is also our responsibility to raise the awareness of STEM education, contribu
 
 46
 00:04:12.920 --> 00:04:17.980
-Throughout the entire project. We kept these 3 main Peters in my
+Throughout the entire project, we kept these 3 main pillars in mind
 
 47
-00:04:18.050 --> 00:04:23.609
-and made sure that all the website aligned with the organization
+00:04:18.050 --> 00:04:24.960
+and made sure that all the website aligned with the organization strategics.
 
 48
-00:04:23.650 --> 00:04:24.960
-strategics
+00:04:24.960 --> 00:04:25.360
+
 
 49
 00:04:25.410 --> 00:04:31.900
-from a technical perspective. Our goal was to improve the accountant management. Experience for editors.
+From a technical perspective, our goal was to improve the accountant management experience for editors.
 
 50
 00:04:32.300 --> 00:04:37.520
-Drupal and I allow us to use the media library to manage assets
+Drupal 9 allows us to use the media library to manage assets
 
 51
 00:04:37.770 --> 00:04:42.080
-and change the Node translation, method to field translation
+and change the Node translation method to field translation.
 
 52
 00:04:42.630 --> 00:04:56.459
-in relation to Drupal. We also implement a design system to maintain the consistency in user experience and enable editors to easily reuse weptic component when creating content.
+In addition to Drupal, we also implement a design system to maintain the consistency in user experience and enable editors to easily reuse web component when creating content.
 
 53
 00:04:56.770 --> 00:05:00.610
@@ -222,15 +223,15 @@ The study helped us identify how users perceive us.
 
 56
 00:05:17.930 --> 00:05:22.040
-and how we can improve the website Information architecture
+and how we can improve the website information architecture
 
 57
 00:05:23.300 --> 00:05:29.739
-In the second phase we hire another vendor to migrate the content and build a new website. Using Triple 9.
+In the second phase we hire another vendor to migrate the content and build a new website using Drupal 9.
 
 58
 00:05:30.200 --> 00:05:33.150
-The vendor completed the development. The
+After the vendor completed the development.
 
 59
 00:05:33.310 --> 00:05:36.089
@@ -238,7 +239,7 @@ our web team took over the content.
 
 60
 00:05:36.390 --> 00:05:44.409
-We convert it and recreate the content and trend the content owner on how to use the new website.
+We convert it and recreate the content and train the content owner on how to use the new website.
 
 61
 00:05:45.150 --> 00:05:50.630
@@ -246,7 +247,7 @@ Our developer and I also work on updating and resolving any additional issues.
 
 62
 00:05:51.600 --> 00:05:59.589
-Last December, 2 years after we begin the project, we successfully relaunch the website.
+Last December, 2 years after we began the project, we successfully relaunch the website.
 
 63
 00:05:59.880 --> 00:06:03.050
@@ -254,7 +255,7 @@ It has been well received by the OIST community.
 
 64
 00:06:04.090 --> 00:06:07.070
-Let's take a quick tour of the site. Now
+Let's take a quick tour of the site now
 
 65
 00:06:07.840 --> 00:06:12.840
@@ -270,7 +271,7 @@ Our media editor can mainly select the related content, or let the system choose
 
 68
 00:06:31.660 --> 00:06:34.449
-We integrate the flicker into the site
+We integrate the flickr into the site
 
 69
 00:06:34.490 --> 00:06:38.130
@@ -282,7 +283,7 @@ for different campaign or special committees.
 
 71
 00:06:42.910 --> 00:06:44.959
-We have a microsi feature
+We have a microsite feature
 
 72
 00:06:45.060 --> 00:06:50.319
@@ -298,11 +299,11 @@ we design for the website.
 
 75
 00:07:09.140 --> 00:07:12.879
-Now this moved on to the technical aspect of our project.
+Now let's moved on to the technical aspect of our project.
 
 76
 00:07:12.910 --> 00:07:19.830
-I would like to provide a high-level overview of the migration process. And how we manage the Development project.
+I would like to provide a high-level overview of the migration process, and how we manage the Development project.
 
 77
 00:07:20.330 --> 00:07:24.580
@@ -310,39 +311,39 @@ Migration was the first and the most important factor in our project.
 
 78
 00:07:24.700 --> 00:07:28.579
-Important content and assets need to be migrated.
+All important content and assets need to be migrated.
 
 79
 00:07:28.750 --> 00:07:37.349
-It wasn't just about migrating the content node. We also had to migrate files and image that were not managing the Cms.
+It wasn't just about migrating the content node. We also had to migrate files and image that were not managing in the CMS.
 
 80
 00:07:37.750 --> 00:07:39.070
-In 2,007.
+In Drupal 7,
 
 81
 00:07:39.130 --> 00:07:52.009
-There was no media library, so we used the video and photo content type to contain assets and later use the short code to reference them in the content body.
+there was no Media Library, so we used the "Video" and "Photo" content type to contain assets, and later use the short code to reference them in the content body.
 
 82
 00:07:52.900 --> 00:08:01.639
-This means we had to migrate all 3,000 content notes and over 6,000 media assets. First.
+This means we had to migrate all 3,000 content nodes and over 6,000 media assets first.
 
 83
 00:08:01.680 --> 00:08:06.840
-then convert all the inline circle into the new media embedded format.
+and then convert all the inline circle into the new media embed format.
 
 84
 00:08:07.420 --> 00:08:08.609
-In the past
+In the past,
 
 85
 00:08:08.990 --> 00:08:15.719
-Content editors were able to use the I and C to upload the files and image to the server directly
+content editors were able to use the IMCE to upload the files and image to the server directly.
 
 86
 00:08:16.030 --> 00:08:22.139
-during the migration we converted over 1,500 in life, ourselves into media types.
+During the migration we converted over 1,500 inline file sources into media types,
 
 87
 00:08:22.220 --> 00:08:31.670
@@ -354,15 +355,15 @@ makes the system more secure.
 
 89
 00:08:34.390 --> 00:08:41.699
-In total, we migrate more than 10,000 content, and assets via the drupal migrate Api script.
+In total, we migrate more than 10,000 content and assets via the Drupal Migrate API script.
 
 90
 00:08:41.789 --> 00:08:48.889
-The migrate profile was kept in use in the project to provide mockup data for testing purpose
+The migrate profile was kept in use in the project to provide mockup data for testing purpose.
 
 91
 00:08:49.470 --> 00:08:58.139
-during each feature development. Our local environment and class Ci environment builds the site with the mockup data. Every time.
+During each feature development, our local environment and cloud CI environment builds the site with the mockup data every time.
 
 92
 00:08:58.650 --> 00:09:02.509
@@ -378,15 +379,15 @@ Migration was critical to the project.
 
 95
 00:09:10.790 --> 00:09:18.260
-and require a lot of efforts to review, content, and validate the results by us worth it.
+and require a lot of efforts to review, content, and validate the results but it was worth it.
 
 96
 00:09:18.350 --> 00:09:22.319
-play the crucial role in the project. Success
+and play the crucial role in the project's success.
 
 97
 00:09:22.740 --> 00:09:24.079
-beyond migration.
+Beyond migration,
 
 98
 00:09:24.160 --> 00:09:28.279
@@ -398,7 +399,7 @@ We made sure to keep our team and the Supervisor informed of our progress.
 
 100
 00:09:34.820 --> 00:09:46.459
-OIST is a large organization, with many decision making channel. So when necessary, we made a stakeholder directly, and then find someone who could support and communicate
+OIST is a large organization, with many decision making channel. So when necessary, we met the stakeholder directly, and then find someone who could support and communicate
 
 101
 00:09:46.600 --> 00:09:48.060
@@ -410,11 +411,11 @@ We use a tool effectively to manage project tasks and assist with the communicat
 
 103
 00:09:57.530 --> 00:10:03.160
-There is no best tool that we find the right to that. All team members were willing to use
+There is no best tool but we find the right tool that all team members were willing to use.
 
 104
 00:10:04.490 --> 00:10:07.659
-to reduce repetitive tasks and risks. The
+To reduce repetitive tasks and risks,
 
 105
 00:10:07.710 --> 00:10:12.940
@@ -422,11 +423,11 @@ we rely on test and automation process as much as possible.
 
 106
 00:10:13.560 --> 00:10:18.420
-All these factors work together to make their project a success
+All these factors work together to make the project a success.
 
 107
 00:10:19.770 --> 00:10:24.459
-during the first stage of the project. When we walk with the vendor
+During the first stage of the project, when we work with the vendor
 
 108
 00:10:24.690 --> 00:10:28.530
@@ -442,27 +443,27 @@ rather than only through the project manager.
 
 111
 00:10:36.780 --> 00:10:43.349
-This accelerate development made the work transparent and increase the Meteor Trust.
+This accelerate development made the work transparent and increase the mutual trust.
 
 112
 00:10:44.040 --> 00:10:52.719
-After the project was delivered. We introduced Surecott to manage both development and content creation tasks on the same platform
+After the project was delivered, we introduced Shortcut to manage both development and content creation tasks on the same platform
 
 113
 00:10:53.080 --> 00:11:01.410
-with Shortcut. We were able to integrate Github to track the status of the Pr. And sinking Development task status.
+With Shortcut, we were able to integrate Github to track the status of the PR and syncing development task status.
 
 114
 00:11:01.640 --> 00:11:10.169
-Many of us already familiar with Github and their project managed tool have been more mature and user-friendly. Now.
+Many of us already familiar with Github and their project managed tool have been more mature and user-friendly, now.
 
 115
 00:11:10.660 --> 00:11:17.540
-showcart is a task management system that can easily manage both development and editing tasks.
+Shortcut is a task management system that can easily manage both development and editing tasks.
 
 116
 00:11:17.870 --> 00:11:22.209
-Given that the task of development and editing require different workflow.
+Given that the task of development and editing require different workflow,
 
 117
 00:11:22.280 --> 00:11:26.519
@@ -478,19 +479,19 @@ This is very helpful for a team with multiple functions.
 
 120
 00:11:36.220 --> 00:11:40.930
-In shortcut. We can quickly think the status of death tasks with Github.
+In shortcut. We can quickly sync the status of dev tasks with Github.
 
 121
 00:11:41.460 --> 00:11:47.139
-even though there are 2 separate platform, we can walk between them simulously.
+even though they are two separate platform, we can work between them seamlessly.
 
 122
 00:11:47.200 --> 00:11:53.540
-We are a 2 developer development team and need to focus on tasks and resolving issues.
+We are a two-developer development team and need to focus on tasks and resolving issues.
 
 123
 00:11:53.830 --> 00:11:57.629
-The Csd Process act as a third developer.
+The CI/CD process act as a third developer.
 
 124
 00:11:57.790 --> 00:12:01.969
@@ -498,23 +499,23 @@ checking the code standard and deploying the code for us.
 
 125
 00:12:02.310 --> 00:12:10.699
-This allow our developer to quickly move on to the next task. After committing the code to the online development environment.
+This allow our developer to quickly move on to the next task after committing the code to the online development environment.
 
 126
 00:12:11.490 --> 00:12:14.310
-Once the commit passed the C IC. Workflow.
+Once the commit passed the CI/CD workflow,
 
 127
 00:12:14.600 --> 00:12:18.709
-We can then focus on reviewing the logic of the code in pull request.
+we can then focus on reviewing the logic of the code in pull request.
 
 128
 00:12:18.750 --> 00:12:23.230
-then ask the Ci CD to deploy it to the production site
+And then ask the CI/CD to deploy it to the production site.
 
 129
 00:12:23.420 --> 00:12:27.680
-with all the tools, script, and continuous communication.
+With all the tools, script, and continuous communication.
 
 130
 00:12:27.800 --> 00:12:30.750
@@ -522,7 +523,7 @@ we were able to complete the project smoothly.
 
 131
 00:12:31.060 --> 00:12:33.790
-Of course, the television team member is.
+Of course, the diligent team members
 
 132
 00:12:34.060 --> 00:12:37.320
@@ -538,19 +539,19 @@ members being international, including employees and students.
 
 135
 00:12:48.740 --> 00:12:52.429
-Our cell signal unit is a diverse example
+Our Cell signal Unit is a diverse example.
 
 136
 00:12:52.620 --> 00:12:57.520
-with the leading faculty. Federal researchers and students from different countries.
+With the leading faculty. fellow researchers and students from different countries.
 
 137
 00:12:57.900 --> 00:12:59.079
-As a result.
+As a result,
 
 138
 00:12:59.270 --> 00:13:03.050
-English and Japanese are equally important at
+English and Japanese are equally important at OIST,
 
 139
 00:13:03.140 --> 00:13:09.270
@@ -558,19 +559,19 @@ and most of the content on our website is translated into both languages
 
 140
 00:13:10.470 --> 00:13:16.420
-During the project we deal with many translations, issues, and in the second part of this talk.
+During the project we dealt with many translations issues, and in the second part of this talk.
 
 141
 00:13:16.500 --> 00:13:23.770
-I'd like to focus on a few of them, particularly for our Japanese and Apex region attendees today.
+I'd like to focus on a few of them, particularly for our Japanese and APAC region attendees today.
 
 142
 00:13:24.620 --> 00:13:27.839
-Drupal has well-defined translation system in core
+Drupal has well-defined translation system in core.
 
 143
 00:13:27.930 --> 00:13:30.830
-depends on your experience and role.
+Depends on your experience and role.
 
 144
 00:13:30.900 --> 00:13:34.319
@@ -578,11 +579,11 @@ There are always ways for you to make translations
 
 145
 00:13:34.830 --> 00:13:36.149
-as a iboder.
+As a site builder,
 
 146
 00:13:36.220 --> 00:13:39.509
-We can translate nodes with a field translation in a boat.
+We can translate nodes with the field translation enabled.
 
 147
 00:13:39.700 --> 00:13:44.640
@@ -590,15 +591,15 @@ Also, we can translate many strings that appears in the user interface.
 
 148
 00:13:45.130 --> 00:13:50.389
-As a simmer we use tweak to Marx translatable sentence with a variable in it.
+As a themer, we use TWIG to mark translatable sentence with a variable in it.
 
 149
 00:13:50.700 --> 00:13:51.949
-As a developer.
+As a developer,
 
 150
 00:13:52.010 --> 00:13:55.540
-we can mark the translatable string with the T function.
+we can mark the translatable string with the t() function.
 
 151
 00:13:55.750 --> 00:14:00.359
@@ -606,39 +607,39 @@ It is also capable to use dynamic variable in the sentence.
 
 152
 00:14:00.850 --> 00:14:05.550
-However, there might be a chance that we need a translation context
+However, there might be a chance that we need a translation context,
 
 153
 00:14:05.960 --> 00:14:11.500
-because a word could be verb or known, or has more than one meaning.
+because a word could be verb or noun, or has more than one meaning.
 
 154
 00:14:11.560 --> 00:14:12.569
-For example.
+For example,
 
 155
 00:14:12.680 --> 00:14:13.650
-contact.
+"Contact"
 
 156
 00:14:13.830 --> 00:14:17.310
-It will be translated into 2 different words in Japanese
+It will be translated into two different words in Japanese
 
 157
 00:14:17.840 --> 00:14:19.819
-as the action conductor
+as the action "コンタクト"
 
 158
 00:14:19.890 --> 00:14:23.119
-as a section label in Nakosaki.
+or as a section label in "連絡先".
 
 159
 00:14:23.680 --> 00:14:30.040
-There are more details about localizing user experience in my talk at the latest triple-comp.
+There are more details about localizing user experience in my talk at the latest DrupalCon Prague.
 
 160
 00:14:30.350 --> 00:14:41.050
-If you are interested in working on bilingual site more often it will be helpful for you. But today I want to focus on the issues specific to the project and related to the Japanese languages.
+If you're interested and work on bilingual sites often, it would be helpful for you. But today I want to focus on the issues specific to the project and related to the Japanese languages.
 
 161
 00:14:41.510 --> 00:14:44.319
@@ -650,7 +651,7 @@ in Japan
 
 163
 00:14:45.880 --> 00:14:47.270
-as well as in to one.
+as well as in Taiwan.
 
 164
 00:14:47.330 --> 00:14:53.170
@@ -658,7 +659,7 @@ We typically use a format that starts with the year followed by the months and d
 
 165
 00:14:53.940 --> 00:14:57.259
-In the other country we often see this state format.
+In the other country we often see this date format.
 
 166
 00:14:57.810 --> 00:14:59.490
@@ -666,15 +667,15 @@ which can be interpreted
 
 167
 00:14:59.530 --> 00:15:10.500
-as either September twelfth or December ninth, depending on the country. For example, most European countries read it as December ninth, while the United States.
+as either September 12th or December 9th, depending on the country. For example, most European countries read it as December 9th, while the United States.
 
 168
 00:15:10.640 --> 00:15:13.149
-with it as September the twelfth.
+read it as September 12th.
 
 169
 00:15:13.620 --> 00:15:16.719
-Given the diversity of our University member.
+Given the diversity of our University members.
 
 170
 00:15:16.910 --> 00:15:23.190
@@ -682,23 +683,23 @@ we have to find a common way to ensure our understanding of information is consi
 
 171
 00:15:24.350 --> 00:15:29.419
-Therefore we use the Iso format in English ui, as it is the same order
+Therefore we use the ISO 8601 format in English UI, as it is the same order
 
 172
 00:15:29.510 --> 00:15:31.940
-format for the Japanese Ui.
+of format for the Japanese UI.
 
 173
 00:15:32.670 --> 00:15:41.189
-Another issue to consider is typing in Japanese, Chinese, or Korean, often referred to as Cjk languages.
+Another issue to consider is typing in Japanese, Chinese, or Korean, often referred to as CJK languages.
 
 174
 00:15:42.040 --> 00:15:49.810
-Type. Enrollment alphabet on a keyboard is relatively easy. But how are words hyped in Cjk languages?
+Typing Roman alphabet on a keyboard is relatively easy. But how are words typed in CJK languages?
 
 175
 00:15:52.180 --> 00:15:59.420
-Here are some paragraph in Cj. About what to do. If you receive the positive COVID-19 notification from the Health Center.
+Here are some paragraph in CJK about "What to do if you receive the positive COVID-19 notification from the Health Center".
 
 176
 00:16:00.040 --> 00:16:01.140
@@ -706,15 +707,15 @@ you can see
 
 177
 00:16:01.210 --> 00:16:03.689
-that in C. J. Care languages
+that in CJK languages
 
 178
 00:16:03.760 --> 00:16:05.989
-the sentence rarely have spaces
+the sentence rarely have spaces.
 
 179
 00:16:06.220 --> 00:16:10.500
-to index the content to the database and make it easy to search.
+To index the content to the database and make it easy to search.
 
 180
 00:16:11.020 --> 00:16:13.279
@@ -722,7 +723,7 @@ Sometimes we need extra treatment.
 
 181
 00:16:13.880 --> 00:16:18.259
-So how do we type? What's this Cjk keyboard looks like
+So how do we type? What's this CJK keyboard looks like?
 
 182
 00:16:18.510 --> 00:16:20.089
@@ -730,31 +731,31 @@ From the left to right
 
 183
 00:16:20.170 --> 00:16:23.399
-we see 2 traditional Chinese keyboards.
+we see two traditional Chinese keyboards.
 
 184
 00:16:23.440 --> 00:16:32.940
-and there are 2 Korean keyboards, layout, and 2 Japanese layout, one in mobile, and the other one is a compact keyboard with the 50
+and there are two Korean keyboards layouts, and two Japanese layouts, one in mobile, and the other one is a compact keyboard with the 50
 
 185
 00:16:33.070 --> 00:16:35.479
-essential science correctors
+essential sounds characters.
 
 186
 00:16:35.880 --> 00:16:39.060
-For those who you don't understand the language.
+For those who don't understand the language.
 
 187
 00:16:39.230 --> 00:16:41.210
-They may look like a possible right
+They may look like a puzzle, right?
 
 188
 00:16:42.710 --> 00:16:45.759
-when typing the words. The keystrokes vary
+When typing the words, the keystrokes vary.
 
 189
 00:16:46.180 --> 00:16:47.729
-for the work computer.
+For the word "Computer".
 
 190
 00:16:48.310 --> 00:16:55.339
@@ -762,7 +763,7 @@ we can also tell. It is different in traditional Chinese used in Taiwan or simpl
 
 191
 00:16:55.540 --> 00:17:02.470
-when typing Cdk text. A word is completed only when all the segment is typed.
+when typing CJK text, a word is completed only when all the segments is typed.
 
 192
 00:17:02.890 --> 00:17:04.790
@@ -770,19 +771,19 @@ Unlike typing English.
 
 193
 00:17:05.030 --> 00:17:08.730
-there might be possible worry combination before finish the typing
+there might be possible worry combination before finish the typing.
 
 194
 00:17:11.829 --> 00:17:13.000
-in this clip
+In this clip
 
 195
 00:17:13.470 --> 00:17:16.050
-it shows that in pulling
+it shows that inputting
 
 196
 00:17:16.160 --> 00:17:22.480
-Japanese kanji requires typing one to 4 or even more the mendic elements.
+Japanese kanji requires typing one to four or even more the phonetic elements.
 
 197
 00:17:23.010 --> 00:17:24.230
@@ -794,15 +795,15 @@ there are different words in Kanji, which have the same pronunciation.
 
 199
 00:17:31.710 --> 00:17:34.879
-This can be to an issue in the search
+This can lead to an issue in the search box,
 
 200
 00:17:34.930 --> 00:17:35.850
-box
+
 
 201
 00:17:35.870 --> 00:17:41.260
-where the search is triggered too early before the actual keyword is completed
+where the search is triggered too early before the actual keyword is completed.
 
 202
 00:17:41.560 --> 00:17:43.889
@@ -810,15 +811,15 @@ which can be annoying for the users.
 
 203
 00:17:44.880 --> 00:17:52.729
-The issue can be improved by implementing a special javascript event method to wait for the composition of the keywords input in
+This issue can be improved by implementing a special JavaScript event method to wait for the completion of the keyword input
 
 204
 00:17:52.890 --> 00:17:55.460
-before the people triggering the search
+before the people triggering the search.
 
 205
 00:18:01.720 --> 00:18:03.000
-to. In this clip
+In this clip
 
 206
 00:18:03.100 --> 00:18:04.919
@@ -826,15 +827,15 @@ we can see some improvement.
 
 207
 00:18:06.480 --> 00:18:15.119
-We can find the English typing words normally, and the Japanese word for corona only queries the result when the word is completed.
+We can find the English typing words normally, and the Japanese word for Corona only queries the result when the word is completed.
 
 208
 00:18:18.880 --> 00:18:24.470
-In Drupal there are autonomous fields for tags or referencing entities.
+In Drupal, there are autocomplete fields for tags or referencing entities.
 
 209
 00:18:24.620 --> 00:18:29.350
-The core has the issue before, but it was fixed in 2,016.
+The core had the issue before, but it was fixed in 2016.
 
 210
 00:18:29.450 --> 00:18:31.600
@@ -842,55 +843,55 @@ Thanks to the Drupal contributors.
 
 211
 00:18:32.360 --> 00:18:40.919
-Mainly, it is the composition event that helps us to identify the spatial event when the typing is finished.
+Mainly, it is the CompositionEvent that helps us to identify the special event when the typing is finished.
 
 212
 00:18:42.480 --> 00:18:48.289
-When we create a custom auto-complete search box we have to implement the event. As well.
+When we created this custom autocomplete search box, we had to implement the event as well.
 
 213
 00:18:49.080 --> 00:18:54.170
-First we detect the starting point of the Cdk input method.
+First we detect the starting point of the CJK input method.
 
 214
 00:18:54.510 --> 00:18:58.000
-Next, we wait until the war is decided.
+Next, we wait until the word is decided.
 
 215
 00:18:58.610 --> 00:19:02.120
-as we see the composition and event happened.
+as we see the CompositionEnd event happens.
 
 216
 00:19:02.740 --> 00:19:05.779
-Finally, we send this Ajax request
+Finally, we send this AJAX request
 
 217
 00:19:06.720 --> 00:19:16.190
-after the typing issue. Let's see some sorting issue in English. We even saw with the alphabet of the title of articles.
+After the typing issue. Let's see some sorting issue. In English, we even sort with the alphabet of the title of articles.
 
 218
 00:19:16.240 --> 00:19:19.150
-taxonomy, tags, or nams. For example.
+taxonomy tags or names, for example.
 
 219
 00:19:19.360 --> 00:19:20.320
-however.
+However, it is entirely different when sorting in Japanese or Chinese.
 
 220
 00:19:20.430 --> 00:19:25.780
-it is entirely different when starting in Japanese, or even in Chinese.
+
 
 221
 00:19:25.970 --> 00:19:28.899
-In Japanese language most of us know it is
+In Japanese language, most of us know it is
 
 222
 00:19:29.160 --> 00:19:32.310
-usually older with the
+usually order with the 五十音
 
 223
 00:19:32.430 --> 00:19:33.380
-could you.
+
 
 224
 00:19:34.100 --> 00:19:37.999
@@ -902,51 +903,51 @@ when we have an array composed
 
 226
 00:19:40.910 --> 00:19:45.730
-of Latin letters, numbers Hiragana, Karagana
+of Latin letters, numbers, Hiragana, Katagana
 
 227
 00:19:45.910 --> 00:19:47.090
-Kanji.
+and Kanji.
 
 228
 00:19:47.360 --> 00:19:49.260
-How do we saw them correctly
+How do we sort them correctly?
 
 229
 00:19:49.600 --> 00:19:54.359
-the idea order in Japanese language. She looks like these on the right.
+The ideal order in Japanese language should looks like these on the right.
 
 230
 00:19:54.600 --> 00:20:03.680
-starting with simple number alphabet like in English, and then Hiragana, Karagana, and the last part the Kanji.
+Starting with simple number alphabet like in English, and then Hiragana, Katagana, and the last part the Kanji.
 
 231
 00:20:04.290 --> 00:20:10.010
-Hiragana and Kalagana follows the order of gorgeon. But what is the order in Kanji?
+Hiragana and Katagana follows the order of 五十音. But what is the order in Kanji?
 
 232
 00:20:11.210 --> 00:20:13.730
-If we use the sort function directly.
+If we use the sort() function directly.
 
 233
 00:20:14.020 --> 00:20:20.919
-it will usually sort the array based on an indexed number of each correctors in the Unicode table.
+it will usually sort the array based on an indexed number of each characters in the Unicode table.
 
 234
 00:20:21.090 --> 00:20:30.799
-However, this doesn't make sense for Japanese speakers, as the order of the correctors doesn't reflect the proper way to sort them in the language.
+However, this doesn't make sense for Japanese speakers, as the order of the characters doesn't reflect the proper way to sort them in the language.
 
 235
 00:20:32.140 --> 00:20:41.670
-One solution is to use the javascript function locale. Compare this function source. Kanji, based on the pronunciation of the first correctors
+One solution is to use the JavaScript function localeCompare(). this function sorts Kanji based on the pronunciation of the first character
 
 236
 00:20:41.770 --> 00:20:45.860
-and then the next correctors. If the first characters is the same
+and then the next character if the first characters is the same
 
 237
 00:20:46.170 --> 00:20:56.790
-in Php, there is also a similar function to do the sorting, but it is recommended to use a database query for better sorting results from the back end.
+In PHP, there is also a similar function to do the sorting, but it is recommended to use a database query for better sorting results from the backend.
 
 238
 00:20:58.760 --> 00:21:04.759
@@ -954,27 +955,27 @@ However, this is not perfect yet. There is one word misplaced in the middle
 
 239
 00:21:05.390 --> 00:21:06.370
-you washed up.
+岩下
 
 240
-00:21:07.950 --> 00:21:10.079
-it is because the Kanji has
+00:21:07.950 --> 00:21:12.040
+It is because the Kanji has another pronunciation.
 
 241
 00:21:10.180 --> 00:21:12.040
-another pronunciation.
+
 
 242
 00:21:12.110 --> 00:21:17.889
-The first characters is read in an alternative way, gone
+The first characters is read in an alternative way "がん"
 
 243
 00:21:17.980 --> 00:21:19.640
-rather than you are
+rather than "いわ"
 
 244
 00:21:21.390 --> 00:21:29.869
-to another example. There is another last name can be called either colonel or colonel. You see, in the same Kanji.
+Another example, there is another last name can be called either かわの or こうの using the same Kanji.
 
 245
 00:21:30.560 --> 00:21:36.870
@@ -986,23 +987,23 @@ How many characters has more than one pronunciation?
 
 247
 00:21:41.230 --> 00:21:49.520
-Japanese country has more than 600 out of 2,000 common correctors, with just more than one pronunciations.
+Japanese country has more than 600 out of 2,000 common characters which has more than one pronounciations.
 
 248
 00:21:50.350 --> 00:21:54.620
-an official definition from the Ministry of Education of Taiwan.
+In the official definition from the Ministry of Education of Taiwan,
 
 249
 00:21:54.970 --> 00:22:01.440
-There were 1,200 out of 5,000 commonly used traditional Chinese characters
+there were 1,200 out of 5,000 commonly used traditional Chinese characters
 
 250
 00:22:02.450 --> 00:22:04.509
-around. 10 years ago
+around 10 years ago
 
 251
 00:22:04.620 --> 00:22:09.890
-officials reviewed, emerged, many of them reducing the number down to the
+officials reviewed and merged many of them, reducing the number down to 
 
 252
 00:22:09.980 --> 00:22:11.459
@@ -1010,19 +1011,19 @@ officials reviewed, emerged, many of them reducing the number down to the
 
 253
 00:22:12.220 --> 00:22:15.399
-Let's take a look at the plan. For example.
+Let's take the Kanji for example.
 
 254
 00:22:15.550 --> 00:22:19.999
-it has more pronunciation due to different cultural contexts.
+It has more pronunciation due to different cultural contexts.
 
 255
 00:22:20.530 --> 00:22:25.379
-4 of them are inherited from the ancient Chinese in various era.
+Four of them are inherited from the ancient Chinese in various eras.
 
 256
 00:22:26.090 --> 00:22:30.370
-Another 4 represents the original terminus language.
+Another four represent the original Japanese language.
 
 257
 00:22:31.680 --> 00:22:35.270
@@ -1030,11 +1031,11 @@ The original Chinese character looks very similar.
 
 258
 00:22:35.390 --> 00:22:37.530
-and he has 3 pronunciations.
+and it has three pronunciations.
 
 259
 00:22:38.260 --> 00:22:47.949
-The character stands for you for music or love for happy or happiness, or yell for the verb to appreciate.
+The character stands for 樂 (yue) for "music" or 樂 (le) for "happy or happiness", or 樂 (yao) for the verb "to appreciate".
 
 260
 00:22:50.400 --> 00:22:51.570
@@ -1042,23 +1043,23 @@ So we
 
 261
 00:22:51.820 --> 00:22:56.249
-now no Japanese soared by pronunciation. How about many Chinese?
+now know Japanese sort by pronunciation. How about Madarin Chinese?
 
 262
 00:22:56.630 --> 00:22:59.270
-Let's bring some delicious how in his food Here
+Let's bring some delicious Taiwanese food here.
 
 263
 00:22:59.520 --> 00:23:01.080
-they are in the order.
+They are in the order of
 
 264
 00:23:01.280 --> 00:23:02.920
-My preference
+my preference
 
 265
 00:23:03.560 --> 00:23:06.720
-How do we solve the names using their attribute?
+How do we sort their names using their attribute?
 
 266
 00:23:07.240 --> 00:23:10.070
@@ -1070,11 +1071,11 @@ This is the first characters of Iwakuni
 
 268
 00:23:14.570 --> 00:23:15.990
-Y. In Mandarin.
+"Yán" in Mandarin.
 
 269
 00:23:16.730 --> 00:23:19.739
-There are at least 4 different ways to sort it.
+There are at least four different ways to sort it.
 
 270
 00:23:20.110 --> 00:23:22.769
@@ -1086,15 +1087,15 @@ total strokes.
 
 272
 00:23:24.830 --> 00:23:26.790
-spell it with Fernando
+spell it with phonetical
 
 273
 00:23:26.820 --> 00:23:29.329
-element, 2 in
+elements 注音
 
 274
 00:23:30.050 --> 00:23:37.560
-which is only using Tau one or opinion with Roman correctors, which is the main input method in China.
+which is only used in Taiwan, or Pinyin with roman characters which is the main input method in China.
 
 275
 00:23:38.880 --> 00:23:42.720
@@ -1102,35 +1103,35 @@ Usually we order with one of the attributes.
 
 276
 00:23:42.900 --> 00:23:49.820
-Sometimes let the user change the sorting method. For instance, the book search system in a library
+And sometimes let the user change the sorting method. For instance, the book search system in a library
 
 277
 00:23:51.320 --> 00:23:58.350
-in traditional Chinese locale compared function also works with the various attributes that I mentioned before
+in traditional Chinese localeCompare() function also works with the various attributes that I mentioned before
 
 278
 00:23:58.700 --> 00:23:59.900
-by strokes
+By strokes
 
 279
 00:24:00.290 --> 00:24:02.319
-or by the phonetic doing.
+or by the phonetic 注音.
 
 280
 00:24:03.140 --> 00:24:09.670
-This is sorting with the phonetic element in a similar way that we saw Japanese ingredients.
+This is sorting with the phonetic element 注音. Similar way that we saw Japanese 五十音.
 
 281
 00:24:10.300 --> 00:24:13.979
-It would be difficult to understand if you don't understand doing.
+It would be difficult to understand, if you don't understand 注音.
 
 282
 00:24:14.730 --> 00:24:16.509
-But the I it may be easier.
+But the other way be easier.
 
 283
 00:24:16.570 --> 00:24:19.090
-This is sorting in the total strokes
+This is sorting in the total strokes.
 
 284
 00:24:19.540 --> 00:24:22.280
@@ -1138,35 +1139,35 @@ we can see the first characters of each
 
 285
 00:24:22.340 --> 00:24:25.340
-has more strokes from left and right.
+has more strokes from left to right.
 
 286
 00:24:25.810 --> 00:24:28.559
-It's amazing that Javascript is supported right.
+It's amazing that JavaScript supported, right.
 
 287
 00:24:28.610 --> 00:24:34.039
-It is all. Thanks to the open source contributors, especially in the Unihan project.
+It is all thanks to the open source contributors, especially in the Unihan project.
 
 288
 00:24:34.100 --> 00:24:35.819
-a sub branch
+a sub branch project
 
 289
 00:24:35.970 --> 00:24:38.900
-project under the unical Open Source project
+under the Unicode open source project.
 
 290
 00:24:39.080 --> 00:24:41.269
-that makes this available.
+That makes this available.
 
 291
 00:24:42.110 --> 00:24:48.509
-Let's think about the unresolved issue, what to do with the multiple pronunciation in Kanji.
+Let's think about the unresolved issue, what to do with the multiple pronunciation in Kanji?
 
 292
 00:24:49.110 --> 00:24:57.009
-the issue of facts, Japanese Kanji, or a Chinese characters when sorting with the phonetic elements doing or opinion.
+the issue affects Japanese Kanji, or a Chinese characters when sorting with the phonetic elements 注音 or Pinyin.
 
 293
 00:24:57.780 --> 00:25:02.329
@@ -1174,7 +1175,7 @@ Technically, native speakers know the common variations of the pronunciation.
 
 294
 00:25:02.370 --> 00:25:05.589
-When we process inhab it, process together.
+When we process in head, it is processed together.
 
 295
 00:25:06.390 --> 00:25:11.620
@@ -1190,7 +1191,7 @@ However, my understanding could be wrong about Japanese.
 
 298
 00:25:17.640 --> 00:25:22.710
-I would be happy to hear from you what is the particle solution here
+I would be happy to hear from you what is the pratical solution here.
 
 299
 00:25:23.530 --> 00:25:28.960
@@ -1198,11 +1199,11 @@ Sometimes, if the clients request to make it in a explicit order.
 
 300
 00:25:29.210 --> 00:25:34.660
-the better way is to map the word into a predefined table or array
+the better way is to map the word into a predefined table or array.
 
 301
 00:25:37.810 --> 00:25:40.769
-at the end. I want to share a sentence with you.
+At the end, I want to share a sentence with you.
 
 302
 00:25:41.120 --> 00:25:42.660
@@ -1210,7 +1211,7 @@ We hear people say
 
 303
 00:25:42.740 --> 00:25:44.700
-devil is in the details.
+"Devil is in the details"
 
 304
 00:25:44.910 --> 00:25:51.140
@@ -1218,11 +1219,11 @@ It means the difficulty or troubles is not revealed until you look close to the 
 
 305
 00:25:51.980 --> 00:25:55.029
-The origin of the sentence is somehow upset.
+The origin of the sentence is somehow opposite.
 
 306
 00:25:56.150 --> 00:25:58.050
-Kamiya.
+"神は細部に宿る"
 
 307
 00:25:58.800 --> 00:26:00.310
@@ -1230,15 +1231,15 @@ It is from Germany
 
 308
 00:26:00.370 --> 00:26:02.740
-architecture.
+architecture, Mies van der Rohe.
 
 309
 00:26:03.130 --> 00:26:05.539
-Their lips got stacked in their tile.
+"Der liebe Gott steckt im detail"
 
 310
 00:26:06.100 --> 00:26:08.510
-No matter. It is devil or God.
+No matter it is devil or God.
 
 311
 00:26:08.910 --> 00:26:11.270
@@ -1250,15 +1251,15 @@ The most important things are in the details.
 
 313
 00:26:16.010 --> 00:26:20.819
-When we see a new website is complete people cheering and feel satisfied
+When we see a new website is complete people cheering and feel satisfied.
 
 314
 00:26:21.140 --> 00:26:26.210
-when the visitor find the good experience using the website in their native town. Intuitively
+When the visitor find the good experience using the website in their native tounge intuitively.
 
 315
 00:26:26.620 --> 00:26:33.409
-it is all because the developer designer walk on every detail to bring the best ux
+It is all because the developer designer work on every detail to bring the best UX
 
 316
 00:26:33.560 --> 00:26:34.920
@@ -1266,11 +1267,11 @@ to our users.
 
 317
 00:26:35.920 --> 00:26:39.039
-Let's look closer and take the challenge.
+Let's look closer and take the challenge,
 
 318
 00:26:39.200 --> 00:26:40.630
-Deal with the devil.
+deal with the devil.
 
 319
 00:26:40.750 --> 00:26:44.039

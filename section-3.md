@@ -41,7 +41,7 @@ User Interface translation in Drupal
 Drupal has well defined translation system in core.
 Depends on your experience and role, there are always ways for you to make translations.
 
-As a sitebuilder, 
+As a site builder, 
 we can translate nodes with field translation enabled. 
 
 Also, we can translate many strings that appear in the user interface.
@@ -382,6 +382,7 @@ For those who you don't know the languages, they may look like puzzles.
 | 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 | zh-hant |
 | 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 | zh-hans |
 </div>
+
 <!--
 When typing the words, the keystrokes vary.
 
