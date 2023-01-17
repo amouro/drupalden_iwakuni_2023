@@ -71,7 +71,7 @@ and I am honored to be here to give a special talk today at the DrupalDEN Iwakun
 Our university, OIST, built a Drupal 7 site in 2011, which was the first year of its release. 
 
 Drupal 7 has had the longest lifespan among all Drupal versions and brought significant changes to the platform. 
-One of these changes was the integration of CCK as the Content Type entity fields, brought Views to the core. 
+One of these changes was the integration of CCK as the Content Type entity fields, brought test-driven development to the core. 
 Additionally, ImageCache was transformed into Image Style.
 
 Last year, we underwent a two-year journey to rebuild and modernize the website using Drupal 9.
